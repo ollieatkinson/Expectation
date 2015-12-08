@@ -1,0 +1,17 @@
+//
+//  Expectation+RespondTo.swift
+//  ExpectationExample
+//
+//  Created by Atkinson, Oliver (Developer) on 21/02/2016.
+//  Copyright © 2016 Oliver. All rights reserved.
+//
+
+import Foundation
+
+extension Expectation where T: NSObjectProtocol {
+  
+  func respondTo(selector: Selector, _ description: String = "") {
+    assertTrue(expect?.respondsToSelector(selector) ?? false, self.description(__FUNCTION__, selector, description))
+  }
+  
+}

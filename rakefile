@@ -1,0 +1,37 @@
+desc "Run the unit tests"
+task :test, [:name, :version] do |t, args|
+  sh "set -o pipefail && xcodebuild -scheme Expectation \
+  -target Expectation \
+  -destination id=#{Simulator.random(match: args[:name], version: args[:version].to_f).udid} \
+  -sdk iphonesimulator \
+  test | bundle exec xcpretty"
+end
+
+class Simulator
+  
+  attr_accessor :name, :type, :version, :udid
+  
+  def initialize captures
+    @name, @type, @version, @udid = captures
+  end
+  
+  def self.random ignore: /watch|tv/i, match: 'iPhone', version: 8.0
+    
+    pattern = %r{ ^([\w\-]+)\s+(.*)\s+\((.*)\) .* \[(.*)\] }x
+
+    Simulator.new IO.popen("xcrun instruments -s | cat").reject  { |line| 
+      ignore =~ line || pattern !~ line 
+    }.map { |line| 
+      pattern.match(line).captures 
+    }.select { |capture| 
+      puts capture
+      capture[2].to_f > version && capture[2].to_f < version + 1 and capture[0].include?(match)
+    }.sample
+    
+  end
+  
+  def to_s
+    "#{name} #{type} #{version} [#{udid}]"
+  end
+  
+end 
