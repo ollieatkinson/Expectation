@@ -1,0 +1,4 @@
+desc "Run the unit tests"
+task :test do
+  sh "set -o pipefail && xcodebuild -scheme Expectation -target ExpectationExample -sdk iphonesimulator test | bundle exec xcpretty"
+end

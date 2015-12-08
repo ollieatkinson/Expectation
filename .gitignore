@@ -1,0 +1,14 @@
+.DS_Store
+*.xccheckout
+xcuserdata/
+xcshareddata/
+*.xcodeproj/*.mode*
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.perspective*
+*.xcworkspace/*.mode*
+*.xcworkspace/*.pbxuser
+*.xcworkspace/*.perspective*
+*.xccheckout
+*.xcscmblueprint
+xcuserdata
+Carthage
