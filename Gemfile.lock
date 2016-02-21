@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    rake (10.5.0)
     rouge (1.10.1)
     xcpretty (0.2.1)
       rouge (~> 1.8)
@@ -9,4 +10,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rake
   xcpretty
+
+BUNDLED WITH
+   1.11.2

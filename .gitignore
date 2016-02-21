@@ -1,7 +1,6 @@
 .DS_Store
 *.xccheckout
 xcuserdata/
-xcshareddata/
 *.xcodeproj/*.mode*
 *.xcodeproj/*.pbxuser
 *.xcodeproj/*.perspective*
@@ -12,3 +11,4 @@ xcshareddata/
 *.xcscmblueprint
 xcuserdata
 Carthage
+*.xcbkptlist
