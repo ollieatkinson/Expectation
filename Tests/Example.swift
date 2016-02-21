@@ -84,7 +84,7 @@ class Example: XCTestCase {
     let expectation = expectationWithDescription("should fail")
     let expectNSNumber = expect(value)
     
-    expectNSNumber.fail = { message, file, line in
+    ExpectationAssertFunctions.fail = { message, file, line in
       expect(message).to.equal("expect(nil).to.beKindOfClass(NSNumber)")
       expectation.fulfill()
     }
@@ -121,7 +121,7 @@ class Example: XCTestCase {
     let expectationHavePrefix = expectationWithDescription("should fail havePrefix")
     let expectHavePrefix = expect(value)
     
-    expectHavePrefix.fail = { message, file, line in
+    ExpectationAssertFunctions.fail = { message, file, line in
       expect(message).to.equal("expect(nil).to.havePrefix(baa)")
       expectationHavePrefix.fulfill()
     }
@@ -135,7 +135,7 @@ class Example: XCTestCase {
     let expectationHaveSuffix = expectationWithDescription("should fail haveSuffix")
     let expectHaveSuffix = expect(value)
     
-    expectHaveSuffix.fail = { message, file, line in
+    ExpectationAssertFunctions.fail = { message, file, line in
       expect(message).to.equal("expect(nil).to.haveSuffix(moo)")
       expectationHaveSuffix.fulfill()
     }
@@ -155,7 +155,7 @@ class Example: XCTestCase {
     let expectationHavePrefix = expectationWithDescription("should fail havePrefix")
     let expectHavePrefix = expect(value)
     
-    expectHavePrefix.fail = { message, file, line in
+    ExpectationAssertFunctions.fail = { message, file, line in
       expect(message).to.equal("expect(nil).to.havePrefix(baa)")
       expectationHavePrefix.fulfill()
     }
@@ -169,7 +169,7 @@ class Example: XCTestCase {
     let expectationHaveSuffix = expectationWithDescription("should fail haveSuffix")
     let expectHaveSuffix = expect(value)
     
-    expectHaveSuffix.fail = { message, file, line in
+    ExpectationAssertFunctions.fail = { message, file, line in
       expect(message).to.equal("expect(nil).to.haveSuffix(moo)")
       expectationHaveSuffix.fulfill()
     }
@@ -210,7 +210,7 @@ class Example: XCTestCase {
     let float: Float? = nil
     let expectation   = expect(float)
     
-    expectation.fail = { message, file, line in
+    ExpectationAssertFunctions.fail = { message, file, line in
       expectationShouldFail.fulfill()
     }
     
