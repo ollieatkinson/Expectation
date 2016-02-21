@@ -13,7 +13,15 @@ public func expect<T>(value: T?, file: String = __FILE__, line: UInt = __LINE__)
 }
 
 public func fail(reason: String = "", file: String = __FILE__, line: UInt = __LINE__) {
-  XCTFail(reason, file: file, line: line)
+  ExpectationAssertFunctions.fail(reason, file: file, line: line)
+}
+
+public class ExpectationAssertFunctions {
+  static var assertTrue   = XCTAssertTrue
+  static var assertFalse  = XCTAssertFalse
+  static var assertNil    = XCTAssertNil
+  static var assertNotNil = XCTAssertNotNil
+  static var fail         = XCTFail
 }
 
 public class Expectation<T> {
@@ -24,8 +32,6 @@ public class Expectation<T> {
 
   let file: String
   let line: UInt
-  
-  var fail = XCTFail
   
   init(_ expect: T?,file: String, line: UInt) {
     
@@ -66,23 +72,23 @@ public class Expectation<T> {
   }
   
   func assertTrue(@autoclosure expression: () -> BooleanType, _ message: String) {
-    (invert ? XCTAssertFalse : XCTAssertTrue)(expression, message, file: file, line: line)
+    (invert ? ExpectationAssertFunctions.assertFalse : ExpectationAssertFunctions.assertTrue)(expression, message, file: file, line: line)
   }
   
   func assertFalse(@autoclosure expression: () -> BooleanType, _ message: String) {
-    (invert ? XCTAssertTrue : XCTAssertFalse)(expression, message, file: file, line: line)
+    (invert ? ExpectationAssertFunctions.assertTrue : ExpectationAssertFunctions.assertFalse)(expression, message, file: file, line: line)
   }
   
   func assertNil(@autoclosure expression: () -> Any?, _ message: String) {
-    (invert ? XCTAssertNotNil : XCTAssertNil)(expression, message, file: file, line: line)
+    (invert ? ExpectationAssertFunctions.assertNotNil : ExpectationAssertFunctions.assertNil)(expression, message, file: file, line: line)
   }
   
   func assertNotNil(@autoclosure expression: () -> Any?, _ message: String) {
-    (invert ? XCTAssertNil : XCTAssertNotNil)(expression, message, file: file, line: line)
+    (invert ? ExpectationAssertFunctions.assertNil : ExpectationAssertFunctions.assertNotNil)(expression, message, file: file, line: line)
   }
   
   func fail(message: String) {
-    fail(message, file: file, line: line)
+    ExpectationAssertFunctions.fail(message, file: file, line: line)
   }
   
 }
