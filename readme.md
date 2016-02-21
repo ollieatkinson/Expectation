@@ -1,5 +1,8 @@
 # Expectation
 
+[![Build Status](https://travis-ci.org/ollieatkinson/Expectation.svg?branch=master)](https://travis-ci.org/ollieatkinson/Expectation)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/ollieatkinson/Expectation/master/LICENSE)
+
 A simple and elegant matcher framework built on top of XCTest for Swift.
 
 ## Introduction
@@ -10,7 +13,22 @@ Expectation provides additional methods for an expectation using protocol extens
 
 ## Installation
 
-TBC
+### CocoaPods
+
+Integrate Expectation using a Podfile:
+
+```ruby
+use_frameworks!
+pod 'Expectation'
+```
+
+### Carthage
+
+Add the following to your Cartfile:
+
+```ruby
+github "ollieatkinson/Expectation"
+```
 
 ## Syntax
 
