@@ -1,10 +1,15 @@
 desc "Run the unit tests"
-task :test, [:name, :version] do |t, args|
+task :test do
+  
+  name    = ENV['NAME']    || 'iPhone'
+  version = ENV['VERSION'] || '9.0'
+  
   sh "set -o pipefail && xcodebuild -scheme Expectation \
   -target Expectation \
-  -destination id=#{Simulator.random(match: args[:name], version: args[:version].to_f).udid} \
+  -destination id=#{Simulator.random(match: name, version: version.to_f).udid} \
   -sdk iphonesimulator \
   test | bundle exec xcpretty"
+  
 end
 
 class Simulator
@@ -15,7 +20,7 @@ class Simulator
     @name, @type, @version, @udid = captures
   end
   
-  def self.random ignore: /watch|tv/i, match: 'iPhone', version: 8.0
+  def self.random ignore: /travis|watch|tv/i, match: 'iPhone', version: 8.0
     
     pattern = %r{ ^([\w\-]+)\s+(.*)\s+\((.*)\) .* \[(.*)\] }x
 
@@ -24,7 +29,6 @@ class Simulator
     }.map { |line| 
       pattern.match(line).captures 
     }.select { |capture| 
-      puts capture
       capture[2].to_f > version && capture[2].to_f < version + 1 and capture[0].include?(match)
     }.sample
     
