@@ -31,6 +31,7 @@
 		FE1844BA1C7A176500047B37 /* Expectation+ConformTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4450821C79F24500FCC635 /* Expectation+ConformTo.swift */; };
 		FE1A43BD1C7A5E81002582B1 /* Expectation+Equal_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1A43BC1C7A5E81002582B1 /* Expectation+Equal_Spec.swift */; };
 		FEA9A6F31C7BA6AA00187B9A /* XCTestCaseAssertionSubstitutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA9A6F21C7BA6AA00187B9A /* XCTestCaseAssertionSubstitutes.swift */; };
+		FEA9A6F51C7BACE600187B9A /* Expectation+BeFalse_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA9A6F41C7BACE600187B9A /* Expectation+BeFalse_Spec.swift */; };
 		FEB6CCB81C7BA1DC004FED49 /* Expectation+BeCloseTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6CCB71C7BA1DC004FED49 /* Expectation+BeCloseTo_Spec.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		FE7E5F0D1C79EA14009DE810 /* Expectation+BeEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeEmpty.swift"; sourceTree = "<group>"; };
 		FE7E5F0F1C79EBEB009DE810 /* Expectation+HaveCountOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+HaveCountOf.swift"; sourceTree = "<group>"; };
 		FEA9A6F21C7BA6AA00187B9A /* XCTestCaseAssertionSubstitutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseAssertionSubstitutes.swift; sourceTree = "<group>"; };
+		FEA9A6F41C7BACE600187B9A /* Expectation+BeFalse_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Expectation+BeFalse_Spec.swift"; path = "Source/Matchers/Expectation+BeFalse_Spec.swift"; sourceTree = "<group>"; };
 		FEB6CCB71C7BA1DC004FED49 /* Expectation+BeCloseTo_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Expectation+BeCloseTo_Spec.swift"; path = "Source/Matchers/Expectation+BeCloseTo_Spec.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 			children = (
 				FE1A43BC1C7A5E81002582B1 /* Expectation+Equal_Spec.swift */,
 				FEB6CCB71C7BA1DC004FED49 /* Expectation+BeCloseTo_Spec.swift */,
+				FEA9A6F41C7BACE600187B9A /* Expectation+BeFalse_Spec.swift */,
 			);
 			name = Matchers;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA9A6F51C7BACE600187B9A /* Expectation+BeFalse_Spec.swift in Sources */,
 				FEB6CCB81C7BA1DC004FED49 /* Expectation+BeCloseTo_Spec.swift in Sources */,
 				FE1A43BD1C7A5E81002582B1 /* Expectation+Equal_Spec.swift in Sources */,
 				FEA9A6F31C7BA6AA00187B9A /* XCTestCaseAssertionSubstitutes.swift in Sources */,
