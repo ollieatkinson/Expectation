@@ -11,6 +11,12 @@ import XCTest
 
 class Expectation_BeCloseTo_Spec: XCTestCase {
   
+  override func setUp() {
+    super.setUp()
+    ExpectationAssertFunctions.assertTrue = XCTAssertTrue
+    ExpectationAssertFunctions.fail       = XCTFail
+  }
+  
   func testBeCloseToNilInput() {
     
     failWithBlock {
@@ -43,7 +49,7 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
     
     assertTrueWithExpectation({
       expect(Float(1.2)).to.beCloseTo(1.0, within: 0.3)
-      }, validation: { expression, message, file, line in
+    }, validation: { expression, message, file, line in
         XCTAssertTrue(expression)
     })
     
@@ -52,9 +58,13 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
   func testBeCloseToFloat80() {
     
     assertTrueWithExpectation({
+      
       expect(Float80(1.2)).to.beCloseTo(1.0, within: 0.3)
-      }, validation: { expression, message, file, line in
+      
+    }, validation: { expression, message, file, line in
+      
         XCTAssertTrue(expression)
+      
     })
     
   }
@@ -63,7 +73,7 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
     
     assertTrueWithExpectation({
       expect(CGFloat(1.2)).to.beCloseTo(1.0, within: 0.3)
-      }, validation: { expression, message, file, line in
+    }, validation: { expression, message, file, line in
         XCTAssertTrue(expression)
     })
     

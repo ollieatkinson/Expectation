@@ -18,142 +18,105 @@ class Expectation_Equal_Spec: XCTestCase {
   
   func testEqualPasses() {
     
-    let assertTrue = expectationWithDescription("assertTrue is executed and the expression succeeds")
-    
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    assertTrueWithExpectation({
       
-      XCTAssertTrue(message == "expect(1).to.equal(1)")
-      XCTAssertTrue(expression())
+      expect(1).to.equal(1)
       
-      assertTrue.fulfill()
-    }
-    
-    expect(1).to.equal(1)
-    
-    waitForExpectationsWithTimeout(1) {
-      XCTAssertNil($0)
-    }
+      }, validation: { expression, message, file, line in
+        
+        XCTAssertTrue(message == "expect(1).to.equal(1)")
+        XCTAssertTrue(expression)
+        
+    })
     
   }
   
   func testEqualFails() {
     
-    let assertTrue = expectationWithDescription("assertTrue is executed and the expression fails")
-    
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    assertTrueWithExpectation({
       
-      XCTAssertTrue(message == "expect(1).to.equal(2)")
-      XCTAssertFalse(expression())
+      expect(1).to.equal(2)
       
-      assertTrue.fulfill()
-    }
-    
-    expect(1).to.equal(2)
-    
-    waitForExpectationsWithTimeout(1) {
-      XCTAssertNil($0)
-    }
+      }, validation: { expression, message, file, line in
+        
+        XCTAssertTrue(message == "expect(1).to.equal(2)")
+        XCTAssertFalse(expression)
+        
+    })
     
   }
     
   func testInverseEqualPasses() {
     
-    let assertFalse = expectationWithDescription("assertFalse is executed and the expression succeeds")
-    
-    ExpectationAssertFunctions.assertFalse = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    assertFalseWithExpectation({
       
-      XCTAssertTrue(message == "expect(1).toNot.equal(2)")
-      XCTAssertFalse(expression())
+      expect(1).toNot.equal(2)
       
-      assertFalse.fulfill()
-    }
-    
-    expect(1).toNot.equal(2)
-    
-    waitForExpectationsWithTimeout(1) {
-      XCTAssertNil($0)
-    }
+      }, validation: { expression, message, file, line in
+        
+        XCTAssertTrue(message == "expect(1).toNot.equal(2)")
+        XCTAssertFalse(expression)
+        
+    })
     
   }
   
   func testInverseEqualFails() {
     
-    let assertFalse = expectationWithDescription("assertFalse is executed and the expression fails")
-    
-    ExpectationAssertFunctions.assertFalse = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    assertFalseWithExpectation({
       
-      XCTAssertTrue(message == "expect(1).toNot.equal(1)")
-      XCTAssertTrue(expression())
+      expect(1).toNot.equal(1)
       
-      assertFalse.fulfill()
-    }
-    
-    expect(1).toNot.equal(1)
-    
-    waitForExpectationsWithTimeout(1) {
-      XCTAssertNil($0)
-    }
+      }, validation: { expression, message, file, line in
+        
+        XCTAssertTrue(message == "expect(1).toNot.equal(1)")
+        XCTAssertTrue(expression)
+        
+    })
     
   }
   
   func testArrayEqualPasses() {
     
-    let assertTrue = expectationWithDescription("assertTrue is executed and the expression succeeds")
-    
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    assertTrueWithExpectation({
       
-      XCTAssertTrue(message == "expect([1, 2, 3]).to.equal([1, 2, 3])", message)
-      XCTAssertTrue(expression())
+      expect([ 1, 2, 3 ]).to.equal([ 1, 2, 3 ])
       
-      assertTrue.fulfill()
-    }
-    
-    expect([ 1, 2, 3 ]).to.equal([ 1, 2, 3 ])
-    
-    waitForExpectationsWithTimeout(1) {
-      XCTAssertNil($0)
-    }
+      }, validation: { expression, message, file, line in
+        
+        XCTAssertTrue(message == "expect([1, 2, 3]).to.equal([1, 2, 3])", message)
+        XCTAssertTrue(expression)
+        
+    })
     
   }
   
   func testArrayEqualFails() {
     
-    let assertTrue = expectationWithDescription("assertTrue is executed and the expression succeeds")
-    
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    assertTrueWithExpectation({
       
-      XCTAssertTrue(message == "expect([1, 2]).to.equal([1, 2, 3])", message)
-      XCTAssertFalse(expression())
+      expect([ 1, 2 ]).to.equal([ 1, 2, 3 ])
       
-      assertTrue.fulfill()
-    }
-    
-    expect([ 1, 2 ]).to.equal([ 1, 2, 3 ])
-    
-    waitForExpectationsWithTimeout(1) {
-      XCTAssertNil($0)
-    }
+      }, validation: { expression, message, file, line in
+        
+        XCTAssertTrue(message == "expect([1, 2]).to.equal([1, 2, 3])", message)
+        XCTAssertFalse(expression)
+        
+    })
     
   }
   
   func testArrayEqualFailsWithNilInput() {
     
-    let assertNotNil = expectationWithDescription("assertNotNil is executed and the expression fails")
-    
-    ExpectationAssertFunctions.assertNotNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
-      
-      XCTAssertTrue(message == "expect(nil).to.equal([1, 2, 3])", message)
-      XCTAssertNil(expression())
-      
-      assertNotNil.fulfill()
-    }
-    
-    
-    expect(nil).to.equal([ 1, 2, 3 ])
-    
-    waitForExpectationsWithTimeout(1) {
-      XCTAssertNil($0)
-    }
+    assertNotNilWithExpectation({
+      expect(nil).to.equal([ 1, 2, 3 ])
+
+      }, validation: { expression, message, file, line in
+        
+        XCTAssertTrue(message == "expect(nil).to.equal([1, 2, 3])", message)
+        XCTAssertNil(expression)
+        
+    })
     
   }
   
