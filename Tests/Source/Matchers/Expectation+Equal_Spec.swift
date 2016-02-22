@@ -9,7 +9,7 @@
 import XCTest
 @testable import Expectation
 
-class Expectation_Equal: XCTestCase {
+class Expectation_Equal_Spec: XCTestCase {
   
   override func setUp() {
     super.setUp()

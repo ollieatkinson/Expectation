@@ -48,7 +48,7 @@ public extension Expectation where T: DoubleConvertible {
     let lowerBound  = expect.doubleValue - within.doubleValue
     let higherBound = expect.doubleValue + within.doubleValue
     
-    assertTrue(other.doubleValue >= lowerBound && other.doubleValue <= higherBound, self.description(__FUNCTION__, "\(other) lower: \(lowerBound), higher: \(higherBound)", description))
+    assertTrue(other.doubleValue >= lowerBound && other.doubleValue <= higherBound, self.description(__FUNCTION__, other, description))
     
   }
   
