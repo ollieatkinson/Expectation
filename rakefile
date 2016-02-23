@@ -4,14 +4,23 @@ require_relative 'lib/bin_available'
 desc "Run the unit tests"
 task :test do
   
-  name    = ENV['NAME']    || 'iPhone'
-  version = ENV['VERSION'] || '9.0'
+  name    = ENV['NAME']
+  version = ENV['VERSION']
   
-  sh "set -o pipefail && xcodebuild -scheme Expectation \
-  -target Expectation \
-  -destination id=#{Simulator.random(match: name, version: version.to_f).udid} \
-  -sdk iphonesimulator \
-  test | bundle exec xcpretty"
+  simulator = nil
+
+  if name.nil? || version.nil?
+    simulator = Simulator.random(match: /^iPhone 6$/, exact_version: 9.2)
+  else 
+    simulator = Simulator.random(match: name, min_version: version.to_f, max_version: (version.to_f + 1).floor)
+  end
+  
+  puts "Testing using #{simulator}\n"
+  
+  sh "set -o pipefail && xcodebuild -scheme Expectation " +
+  "-target Expectation " +
+  "-destination id=#{simulator.udid} " +
+  "-sdk iphonesimulator test | bundle exec xcpretty"
   
 end
 
@@ -20,5 +29,14 @@ task :install do
   
   sh "bundle install"
   sh "brew install swiftlint" unless bin_available? "swiftlint"
+  
+end
+
+namespace :project do
+  
+  desc "Sort the project file and create determanistic file hashes"
+  task :unique do 
+    sh "xcunique Expectation.xcodeproj/project.pbxproj"
+  end
   
 end
