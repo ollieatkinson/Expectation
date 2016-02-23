@@ -33,6 +33,11 @@ class Expectation_BeKindOfClass_Spec: XCTestCase {
       expect(NSObject()).to.beKindOfClass(NSFileManager)
     }
     
+    assertTrueValidate(False) {
+      let value: NSObject? = nil
+      expect(value).to.beKindOfClass(NSFileManager)
+    }
+    
   }
   
   func testBeKindOfClassInverse() {

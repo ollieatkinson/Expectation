@@ -39,6 +39,16 @@
 		FE9A814A1C7D053100F4EE0E /* Expectation+BeTrue_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A81411C7D053100F4EE0E /* Expectation+BeTrue_Spec.swift */; };
 		FE9A814B1C7D053100F4EE0E /* Expectation+Equal_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A81421C7D053100F4EE0E /* Expectation+Equal_Spec.swift */; };
 		FE9A814D1C7D053E00F4EE0E /* XCTestCaseAssertionSubstitutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A814C1C7D053E00F4EE0E /* XCTestCaseAssertionSubstitutes.swift */; };
+		FE9A814F1C7D07C200F4EE0E /* Expectation+BeNil_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A814E1C7D07C200F4EE0E /* Expectation+BeNil_Spec.swift */; };
+		FE9A81511C7D0BED00F4EE0E /* Expectation+Contain_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A81501C7D0BED00F4EE0E /* Expectation+Contain_Spec.swift */; };
+		FE9A81531C7D0D8A00F4EE0E /* Expectation+HavePrefix_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A81521C7D0D8A00F4EE0E /* Expectation+HavePrefix_Spec.swift */; };
+		FE9A81551C7D0E7800F4EE0E /* Expectation+HaveSuffix_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A81541C7D0E7800F4EE0E /* Expectation+HaveSuffix_Spec.swift */; };
+		FE9A81571C7D0EBA00F4EE0E /* Expectation+BeDynamicType_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A81561C7D0EBA00F4EE0E /* Expectation+BeDynamicType_Spec.swift */; };
+		FEB3F3CE1C7D10FF0091BDFA /* Expectation+BeEmpty_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB3F3CD1C7D10FF0091BDFA /* Expectation+BeEmpty_Spec.swift */; };
+		FEB3F3D01C7D11D00091BDFA /* Expectation+HaveCountOf_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB3F3CF1C7D11D00091BDFA /* Expectation+HaveCountOf_Spec.swift */; };
+		FEB3F3D41C7D12D20091BDFA /* Expectation+RespondTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB3F3D31C7D12D20091BDFA /* Expectation+RespondTo_Spec.swift */; };
+		FEB3F3D61C7D13990091BDFA /* Expectation+ConformTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB3F3D51C7D13990091BDFA /* Expectation+ConformTo_Spec.swift */; };
+		FEB3F3D81C7D13A60091BDFA /* Expectation+BeIdenticalTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB3F3D71C7D13A60091BDFA /* Expectation+BeIdenticalTo_Spec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +98,16 @@
 		FE9A81411C7D053100F4EE0E /* Expectation+BeTrue_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeTrue_Spec.swift"; sourceTree = "<group>"; };
 		FE9A81421C7D053100F4EE0E /* Expectation+Equal_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+Equal_Spec.swift"; sourceTree = "<group>"; };
 		FE9A814C1C7D053E00F4EE0E /* XCTestCaseAssertionSubstitutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseAssertionSubstitutes.swift; sourceTree = "<group>"; };
+		FE9A814E1C7D07C200F4EE0E /* Expectation+BeNil_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeNil_Spec.swift"; sourceTree = "<group>"; };
+		FE9A81501C7D0BED00F4EE0E /* Expectation+Contain_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+Contain_Spec.swift"; sourceTree = "<group>"; };
+		FE9A81521C7D0D8A00F4EE0E /* Expectation+HavePrefix_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+HavePrefix_Spec.swift"; sourceTree = "<group>"; };
+		FE9A81541C7D0E7800F4EE0E /* Expectation+HaveSuffix_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+HaveSuffix_Spec.swift"; sourceTree = "<group>"; };
+		FE9A81561C7D0EBA00F4EE0E /* Expectation+BeDynamicType_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeDynamicType_Spec.swift"; sourceTree = "<group>"; };
+		FEB3F3CD1C7D10FF0091BDFA /* Expectation+BeEmpty_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeEmpty_Spec.swift"; sourceTree = "<group>"; };
+		FEB3F3CF1C7D11D00091BDFA /* Expectation+HaveCountOf_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+HaveCountOf_Spec.swift"; sourceTree = "<group>"; };
+		FEB3F3D31C7D12D20091BDFA /* Expectation+RespondTo_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+RespondTo_Spec.swift"; sourceTree = "<group>"; };
+		FEB3F3D51C7D13990091BDFA /* Expectation+ConformTo_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+ConformTo_Spec.swift"; sourceTree = "<group>"; };
+		FEB3F3D71C7D13A60091BDFA /* Expectation+BeIdenticalTo_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeIdenticalTo_Spec.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,8 +221,18 @@
 				FE9A813E1C7D053100F4EE0E /* Expectation+BeKindOfClass_Spec.swift */,
 				FE9A813F1C7D053100F4EE0E /* Expectation+BeLessThan_Spec.swift */,
 				FE9A81401C7D053100F4EE0E /* Expectation+BeLessThanOrEqualTo_Spec.swift */,
+				FEB3F3D31C7D12D20091BDFA /* Expectation+RespondTo_Spec.swift */,
 				FE9A81411C7D053100F4EE0E /* Expectation+BeTrue_Spec.swift */,
 				FE9A81421C7D053100F4EE0E /* Expectation+Equal_Spec.swift */,
+				FE9A814E1C7D07C200F4EE0E /* Expectation+BeNil_Spec.swift */,
+				FE9A81501C7D0BED00F4EE0E /* Expectation+Contain_Spec.swift */,
+				FE9A81521C7D0D8A00F4EE0E /* Expectation+HavePrefix_Spec.swift */,
+				FE9A81541C7D0E7800F4EE0E /* Expectation+HaveSuffix_Spec.swift */,
+				FE9A81561C7D0EBA00F4EE0E /* Expectation+BeDynamicType_Spec.swift */,
+				FEB3F3CD1C7D10FF0091BDFA /* Expectation+BeEmpty_Spec.swift */,
+				FEB3F3CF1C7D11D00091BDFA /* Expectation+HaveCountOf_Spec.swift */,
+				FEB3F3D51C7D13990091BDFA /* Expectation+ConformTo_Spec.swift */,
+				FEB3F3D71C7D13A60091BDFA /* Expectation+BeIdenticalTo_Spec.swift */,
 			);
 			path = Matchers;
 			sourceTree = "<group>";
@@ -360,13 +390,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB3F3D01C7D11D00091BDFA /* Expectation+HaveCountOf_Spec.swift in Sources */,
+				FE9A81571C7D0EBA00F4EE0E /* Expectation+BeDynamicType_Spec.swift in Sources */,
 				FE9A814B1C7D053100F4EE0E /* Expectation+Equal_Spec.swift in Sources */,
 				FE9A814A1C7D053100F4EE0E /* Expectation+BeTrue_Spec.swift in Sources */,
+				FE9A81511C7D0BED00F4EE0E /* Expectation+Contain_Spec.swift in Sources */,
 				FE9A81481C7D053100F4EE0E /* Expectation+BeLessThan_Spec.swift in Sources */,
 				FE9A81471C7D053100F4EE0E /* Expectation+BeKindOfClass_Spec.swift in Sources */,
 				FE9A81451C7D053100F4EE0E /* Expectation+BeGreaterThan_Spec.swift in Sources */,
 				FE9A81461C7D053100F4EE0E /* Expectation+BeGreaterThanOrEqualTo_Spec.swift in Sources */,
+				FEB3F3CE1C7D10FF0091BDFA /* Expectation+BeEmpty_Spec.swift in Sources */,
+				FE9A814F1C7D07C200F4EE0E /* Expectation+BeNil_Spec.swift in Sources */,
+				FE9A81531C7D0D8A00F4EE0E /* Expectation+HavePrefix_Spec.swift in Sources */,
+				FEB3F3D41C7D12D20091BDFA /* Expectation+RespondTo_Spec.swift in Sources */,
 				FE9A81441C7D053100F4EE0E /* Expectation+BeFalse_Spec.swift in Sources */,
+				FEB3F3D61C7D13990091BDFA /* Expectation+ConformTo_Spec.swift in Sources */,
+				FEB3F3D81C7D13A60091BDFA /* Expectation+BeIdenticalTo_Spec.swift in Sources */,
+				FE9A81551C7D0E7800F4EE0E /* Expectation+HaveSuffix_Spec.swift in Sources */,
 				FE9A81491C7D053100F4EE0E /* Expectation+BeLessThanOrEqualTo_Spec.swift in Sources */,
 				FE9A81431C7D053100F4EE0E /* Expectation+BeCloseTo_Spec.swift in Sources */,
 				FE9A814D1C7D053E00F4EE0E /* XCTestCaseAssertionSubstitutes.swift in Sources */,
