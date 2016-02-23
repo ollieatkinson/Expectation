@@ -20,7 +20,7 @@ class Expectation_Equal_Spec: XCTestCase {
 
   }
   
-  func testEqualPasses() {
+  func testEqualPass() {
     
     assertTrueValidate(True) {
       expect(1).to.equal(1)
@@ -28,7 +28,7 @@ class Expectation_Equal_Spec: XCTestCase {
     
   }
   
-  func testEqualFails() {
+  func testEqualFail() {
     
     assertTrueValidate(False) {
       expect(1).to.equal(2)
@@ -36,7 +36,7 @@ class Expectation_Equal_Spec: XCTestCase {
     
   }
     
-  func testInverseEqualPasses() {
+  func testInverseEqualPass() {
     
     assertFalseValidate(False) {
       expect(1).toNot.equal(2)
@@ -44,7 +44,7 @@ class Expectation_Equal_Spec: XCTestCase {
     
   }
   
-  func testInverseEqualFails() {
+  func testInverseEqualFail() {
     
     assertFalseValidate(True) {
       expect(1).toNot.equal(1)
@@ -52,7 +52,7 @@ class Expectation_Equal_Spec: XCTestCase {
     
   }
   
-  func testArrayEqualPasses() {
+  func testArrayEqualPass() {
     
     assertTrueValidate(True) {
       expect([ 1, 2, 3 ]).to.equal([ 1, 2, 3 ])
@@ -60,7 +60,7 @@ class Expectation_Equal_Spec: XCTestCase {
     
   }
   
-  func testArrayEqualFails() {
+  func testArrayEqualFail() {
     
     assertTrueValidate(False) {
       expect([ 1, 2 ]).to.equal([ 1, 2, 3 ])
@@ -68,7 +68,7 @@ class Expectation_Equal_Spec: XCTestCase {
     
   }
   
-  func testArrayEqualFailsWithNilInput() {
+  func testArrayEqualNilInputFail() {
     
     failWithBlock {
       expect(nil).to.equal([ 1, 2, 3 ])

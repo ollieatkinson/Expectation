@@ -19,7 +19,7 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
     
   }
   
-  func testBeCloseToNilInput() {
+  func testBeCloseToNilInputFail() {
     
     failWithBlock {
       expect(nil).to.beCloseTo(1, within: 0.3)
@@ -27,7 +27,7 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
     
   }
   
-  func testBeCloseToSuccessful() {
+  func testBeCloseToPass() {
     
     assertTrueValidate(True) {
       expect(1.2).to.beCloseTo(1.0, within: 0.3)
@@ -35,7 +35,7 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
     
   }
   
-  func testBeCloseToFailure() {
+  func testBeCloseToFail() {
     
     assertTrueValidate(False) {
       expect(1.2).to.beCloseTo(1.0, within: 0.1)
@@ -43,7 +43,7 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
     
   }
   
-  func testBeCloseToFloat() {
+  func testBeCloseToFloatPass() {
     
     assertTrueValidate(True) {
       expect(Float(1.2)).to.beCloseTo(1.0, within: 0.3)
@@ -51,7 +51,7 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
     
   }
   
-  func testBeCloseToCGFloat() {
+  func testBeCloseToCGFloatPass() {
     
     assertTrueValidate(True) {
       expect(CGFloat(1.2)).to.beCloseTo(1.0, within: 0.3)
