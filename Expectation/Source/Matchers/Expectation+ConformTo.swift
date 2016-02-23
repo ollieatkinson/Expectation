@@ -15,4 +15,3 @@ extension Expectation where T: NSObjectProtocol {
   }
   
 }
-
