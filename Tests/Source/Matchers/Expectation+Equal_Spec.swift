@@ -13,110 +13,66 @@ class Expectation_Equal_Spec: XCTestCase {
   
   override func setUp() {
     super.setUp()
-    ExpectationAssertFunctions.assertTrue = XCTAssertTrue
+    
+    ExpectationAssertFunctions.assertTrue  = XCTAssertTrue
+    ExpectationAssertFunctions.assertFalse = XCTAssertFalse
+    ExpectationAssertFunctions.fail        = XCTFail
+
   }
   
   func testEqualPasses() {
     
-    assertTrueWithExpectation({
-      
+    assertTrueValidate(True) {
       expect(1).to.equal(1)
-      
-      }, validation: { expression, message, file, line in
-        
-        XCTAssertTrue(message == "expect(1).to.equal(1)")
-        XCTAssertTrue(expression)
-        
-    })
+    }
     
   }
   
   func testEqualFails() {
     
-    assertTrueWithExpectation({
-      
+    assertTrueValidate(False) {
       expect(1).to.equal(2)
-      
-      }, validation: { expression, message, file, line in
-        
-        XCTAssertTrue(message == "expect(1).to.equal(2)")
-        XCTAssertFalse(expression)
-        
-    })
+    }
     
   }
     
   func testInverseEqualPasses() {
     
-    assertFalseWithExpectation({
-      
+    assertFalseValidate(False) {
       expect(1).toNot.equal(2)
-      
-      }, validation: { expression, message, file, line in
-        
-        XCTAssertTrue(message == "expect(1).toNot.equal(2)")
-        XCTAssertFalse(expression)
-        
-    })
+    }
     
   }
   
   func testInverseEqualFails() {
     
-    assertFalseWithExpectation({
-      
+    assertFalseValidate(True) {
       expect(1).toNot.equal(1)
-      
-      }, validation: { expression, message, file, line in
-        
-        XCTAssertTrue(message == "expect(1).toNot.equal(1)")
-        XCTAssertTrue(expression)
-        
-    })
+    }
     
   }
   
   func testArrayEqualPasses() {
     
-    assertTrueWithExpectation({
-      
+    assertTrueValidate(True) {
       expect([ 1, 2, 3 ]).to.equal([ 1, 2, 3 ])
-      
-      }, validation: { expression, message, file, line in
-        
-        XCTAssertTrue(message == "expect([1, 2, 3]).to.equal([1, 2, 3])", message)
-        XCTAssertTrue(expression)
-        
-    })
+    }
     
   }
   
   func testArrayEqualFails() {
     
-    assertTrueWithExpectation({
-      
+    assertTrueValidate(False) {
       expect([ 1, 2 ]).to.equal([ 1, 2, 3 ])
-      
-      }, validation: { expression, message, file, line in
-        
-        XCTAssertTrue(message == "expect([1, 2]).to.equal([1, 2, 3])", message)
-        XCTAssertFalse(expression)
-        
-    })
+    }
     
   }
   
   func testArrayEqualFailsWithNilInput() {
     
-    assertNotNilWithExpectation({
+    failWithBlock {
       expect(nil).to.equal([ 1, 2, 3 ])
-
-      }, validation: { expression, message, file, line in
-        
-        XCTAssertTrue(message == "expect(nil).to.equal([1, 2, 3])", message)
-        XCTAssertNil(expression)
-        
-    })
+    }
     
   }
   

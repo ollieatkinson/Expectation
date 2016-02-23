@@ -13,8 +13,10 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
   
   override func setUp() {
     super.setUp()
+    
     ExpectationAssertFunctions.assertTrue = XCTAssertTrue
     ExpectationAssertFunctions.fail       = XCTFail
+    
   }
   
   func testBeCloseToNilInput() {
@@ -27,55 +29,33 @@ class Expectation_BeCloseTo_Spec: XCTestCase {
   
   func testBeCloseToSuccessful() {
     
-    assertTrueWithExpectation({
+    assertTrueValidate(True) {
       expect(1.2).to.beCloseTo(1.0, within: 0.3)
-    }, validation: { expression, message, file, line in
-      XCTAssertTrue(expression)
-    })
+    }
     
   }
   
   func testBeCloseToFailure() {
     
-    assertTrueWithExpectation({
+    assertTrueValidate(False) {
       expect(1.2).to.beCloseTo(1.0, within: 0.1)
-    }, validation: { expression, message, file, line in
-        XCTAssertFalse(expression)
-    })
+    }
     
   }
   
   func testBeCloseToFloat() {
     
-    assertTrueWithExpectation({
+    assertTrueValidate(True) {
       expect(Float(1.2)).to.beCloseTo(1.0, within: 0.3)
-    }, validation: { expression, message, file, line in
-        XCTAssertTrue(expression)
-    })
-    
-  }
-  
-  func testBeCloseToFloat80() {
-    
-    assertTrueWithExpectation({
-      
-      expect(Float80(1.2)).to.beCloseTo(1.0, within: 0.3)
-      
-    }, validation: { expression, message, file, line in
-      
-        XCTAssertTrue(expression)
-      
-    })
+    }
     
   }
   
   func testBeCloseToCGFloat() {
     
-    assertTrueWithExpectation({
+    assertTrueValidate(True) {
       expect(CGFloat(1.2)).to.beCloseTo(1.0, within: 0.3)
-    }, validation: { expression, message, file, line in
-        XCTAssertTrue(expression)
-    })
+    }
     
   }
 

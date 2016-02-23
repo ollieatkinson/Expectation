@@ -21,7 +21,7 @@ public extension Expectation where T: CollectionType, T.Generator.Element: Equat
     if let expect = expect {
       assertTrue(Array(expect) == Array(other), self.description(__FUNCTION__, other, description))
     } else {
-      assertNotNil(nil, self.description(__FUNCTION__, other, description))
+      fail(self.description(__FUNCTION__, other, description))
     }
     
   }

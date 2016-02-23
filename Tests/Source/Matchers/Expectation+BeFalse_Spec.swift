@@ -13,31 +13,25 @@ class Expectation_BeFalse_Spec: XCTestCase {
   
   func testBeFalsePass() {
     
-    assertTrueWithExpectation({
+    assertTrueValidate(False) {
       expect(false).to.beFalse()
-      }, validation: { expression, message, file, line in
-        XCTAssertTrue(expression)
-    })
+    }
     
   }
   
   func testBeFalseFail() {
     
-    assertTrueWithExpectation({
+    assertTrueValidate(False) {
       expect(true).to.beFalse()
-      }, validation: { expression, message, file, line in
-        XCTAssertFalse(expression)
-    })
+    }
     
   }
   
   func testBeFalsePassInverted() {
     
-    assertFalseWithExpectation({
-      expect(true).toNot.beFalse()
-      }, validation: { expression, message, file, line in
-        XCTAssertFalse(expression)
-    })
+    assertTrueValidate(False) {
+      expect(true).to.beFalse()
+    }
     
   }
   

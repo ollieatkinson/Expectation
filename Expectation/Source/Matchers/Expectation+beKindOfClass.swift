@@ -10,15 +10,8 @@ import Foundation
 
 public extension Expectation where T: NSObjectProtocol {
   
-  public func beKindOfClass(klass: AnyClass, _ description: String = "") {
-    
-    guard let expect = expect else {
-      fail(self.description(__FUNCTION__, klass, description))
-      return
-    }
-    
-    assertTrue(expect.isKindOfClass(klass), self.description(__FUNCTION__, klass, description))
-    
+  func beKindOfClass(klass: AnyClass, _ description: String = "") {
+    assertTrue(expect?.isKindOfClass(klass) ?? false, self.description(__FUNCTION__, klass, description))
   }
   
 }
