@@ -8,7 +8,7 @@ class Simulator
   
   def self.random ignore: /travis|watch|tv/i, match: /^iPhone 6$/, min_version: 8.0, max_version: 10.0, exact_version: nil
     
-    pattern = %r{^(.+)\(([\d\.]{3})\)\s\[(.+)\]$}x
+    pattern = %r{^(.+)\(([\d\.]+)\)\s\[(.+)\]$}x
 
     Simulator.new IO.popen("xcrun instruments -s | cat").reject  { |line| 
       ignore =~ line || pattern !~ line 

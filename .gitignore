@@ -12,3 +12,4 @@ xcuserdata/
 xcuserdata
 Carthage
 *.xcbkptlist
+build/

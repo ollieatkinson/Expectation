@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ollieatkinson/Expectation.svg?branch=master)](https://travis-ci.org/ollieatkinson/Expectation)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/ollieatkinson/Expectation/master/LICENSE)
+[![codecov.io](http://codecov.io/github/ollieatkinson/Expectation/coverage.svg?branch=development)](http://codecov.io/github/ollieatkinson/Expectation?branch=development)
 
 A simple and elegant matcher framework built on top of XCTest for Swift.
 

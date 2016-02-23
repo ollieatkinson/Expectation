@@ -14,13 +14,16 @@ task :test do
   else 
     simulator = Simulator.random(match: name, min_version: version.to_f, max_version: (version.to_f + 1).floor)
   end
-  
-  puts "Testing using #{simulator}\n"
-  
-  sh "set -o pipefail && xcodebuild -scheme Expectation " +
-  "-target Expectation " +
-  "-destination id=#{simulator.udid} " +
-  "-sdk iphonesimulator test | bundle exec xcpretty"
+    
+  sh "set -o pipefail && " +
+  "xcodebuild -scheme Expectation " +
+              "-target Expectation " +
+              "-destination id=#{simulator.udid} " +
+              "-enableCodeCoverage YES " +
+              "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES " +
+              "ONLY_ACTIVE_ARCH=YES " +
+              "VALID_ARCHS=x86_64 " +
+              "-sdk iphonesimulator test | bundle exec xcpretty -c"
   
 end
 

@@ -1,8 +1,11 @@
 language: objective-c
 osx_image: xcode7.2
 
-before_install:
+install:
   - bundle install
+  
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 script:
   - bundle exec rake test
