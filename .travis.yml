@@ -11,7 +11,7 @@ script:
   - bundle exec rake test
 
 env:
-  - "NAME=iPhone VERSION=8.0"
-  - "NAME=iPhone VERSION=9.0"
-  - "NAME=iPad VERSION=8.0"
-  - "NAME=iPad VERSION=9.0"
+  - "NAME='iPhone 6' VERSION=8.0"
+  - "NAME='iPhone 6' VERSION=9.0"
+  - "NAME='iPad Air' VERSION=8.0"
+  - "NAME='iPad Air' VERSION=9.0"
