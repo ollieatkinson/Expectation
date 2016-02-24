@@ -13,22 +13,7 @@ Expectation provides additional methods for an expectation using protocol extens
 
 ## Installation
 
-### CocoaPods
-
-Integrate Expectation using a Podfile:
-
-```ruby
-use_frameworks!
-pod 'Expectation'
-```
-
-### Carthage
-
-Add the following to your Cartfile:
-
-```ruby
-github "ollieatkinson/Expectation"
-```
+N/A
 
 ## Syntax
 
