@@ -6,9 +6,9 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-extension Expectation where T: CollectionType, T.Generator.Element: Equatable {
+public extension Expectation where T: CollectionType, T.Generator.Element: Equatable {
 
-  func contain(element: T.Generator.Element, _ description: String = "") {
+  public func contain(element: T.Generator.Element, _ description: String = "") {
     assertFalse(expect?.indexOf(element) == nil, self.description(__FUNCTION__, element, description))
   }
   

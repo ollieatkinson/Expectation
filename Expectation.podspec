@@ -14,9 +14,11 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
-  s.module_name  = "Expectation"
-  s.source       = { git: "https://github.com/ollieatkinson/Expectation.git", tag: "0.0.2" }
-  s.source_files = "Expectation/**/*.swift"
-  s.frameworks   = [ "Foundation", "XCTest" ]
+  s.module_name         = "Expectation"
+  s.source              = { git: "https://github.com/ollieatkinson/Expectation.git", tag: "0.0.2" }
+  s.source_files        = "Expectation/**/*.{swift,h,m}"
+  s.frameworks          = [ "Foundation" ]
+  s.weak_framework      = "XCTest"
+  s.pod_target_xcconfig = { ENABLE_BITCODE: 'NO', OTHER_LDFLAGS: '-weak-lswiftXCTest', FRAMEWORK_SEARCH_PATHS: '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
   
 end
