@@ -6,9 +6,9 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-extension Expectation where T: Comparable {
+public extension Expectation where T: Comparable {
   
-  func beGreaterThanOrEqualTo(other: T, _ description: String = "") {
+  public func beGreaterThanOrEqualTo(other: T, _ description: String = "") {
     assertTrue(expect >= other, self.description(__FUNCTION__, other, description))
   }
   

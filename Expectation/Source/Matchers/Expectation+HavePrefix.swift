@@ -6,9 +6,9 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-extension Expectation where T: StringLiteralConvertible {
+public extension Expectation where T: StringLiteralConvertible {
   
-  func havePrefix(other: T, _ description: String = "") {
+  public func havePrefix(other: T, _ description: String = "") {
     
     guard let expect = expect else {
       fail(self.description(__FUNCTION__, other, description))

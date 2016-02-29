@@ -6,17 +6,17 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-extension Expectation where T: Equatable {
+public extension Expectation where T: Equatable {
   
-  func equal(other: T, _ description: String = "") {
+  public func equal(other: T, _ description: String = "") {
     assertTrue(expect == other, self.description(__FUNCTION__, other, description))
   }
   
 }
 
-extension Expectation where T: CollectionType, T.Generator.Element: Equatable {
+public extension Expectation where T: CollectionType, T.Generator.Element: Equatable {
   
-  func equal(other: T, _ description: String = "") {
+  public func equal(other: T, _ description: String = "") {
     
     if let expect = expect {
       assertTrue(Array(expect) == Array(other), self.description(__FUNCTION__, other, description))

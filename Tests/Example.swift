@@ -202,9 +202,6 @@ class Example: XCTestCase {
     expect(CGFloat(1.2)).to.beCloseTo(1, within: 0.3)
     expect(CGFloat(1.2)).toNot.beCloseTo(1, within: 0.1)
     
-    expect(Float80(1.2)).to.beCloseTo(1, within: 0.2)
-    expect(Float80(1.2)).toNot.beCloseTo(1, within: 0.1)
-    
     let expectationShouldFail = expectationWithDescription("should fail beCloseTo")
     
     let float: Float? = nil

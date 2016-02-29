@@ -6,9 +6,9 @@
 //  Copyright © 2016 Oliver. All rights reserved.
 //
 
-extension Expectation {
+public extension Expectation {
   
-  func beDynamicType<U>(other: U.Type, _ description: String = "") {
+  public func beDynamicType<U>(other: U.Type, _ description: String = "") {
     assertTrue(expect.dynamicType == other, self.description(__FUNCTION__, other, description))
   }
   

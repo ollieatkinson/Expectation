@@ -6,9 +6,9 @@
 //  Copyright © 2016 Oliver. All rights reserved.
 //
 
-extension Expectation where T: CollectionType {
+public extension Expectation where T: CollectionType {
   
-  func haveCountOf(count: T.Index.Distance, description: String = "") {
+  public func haveCountOf(count: T.Index.Distance, description: String = "") {
     assertTrue(expect?.count == count, self.description(__FUNCTION__, count, description))
   }
   
