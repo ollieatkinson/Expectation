@@ -6,9 +6,9 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-extension Expectation {
+public extension Expectation {
   
-  func beNil(description: String = "") {
+  public func beNil(description: String = "") {
     assertNil(expect, self.description(__FUNCTION__, description))
   }
   

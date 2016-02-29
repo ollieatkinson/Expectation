@@ -8,13 +8,13 @@
 
 import CoreGraphics
 
-protocol DoubleConvertible {
+public protocol DoubleConvertible {
   var doubleValue: Double { get }
 }
 
 extension Double: DoubleConvertible {
   
-  var doubleValue: Double {
+  public var doubleValue: Double {
     return self
   }
   
@@ -22,15 +22,7 @@ extension Double: DoubleConvertible {
 
 extension Float: DoubleConvertible {
   
-  var doubleValue: Double {
-    return Double(self)
-  }
-  
-}
-
-extension Float80: DoubleConvertible {
-  
-  var doubleValue: Double {
+  public var doubleValue: Double {
     return Double(self)
   }
   
@@ -38,15 +30,15 @@ extension Float80: DoubleConvertible {
 
 extension CGFloat: DoubleConvertible {
   
-  var doubleValue: Double {
+  public var doubleValue: Double {
     return Double(self)
   }
   
 }
 
-extension Expectation where T: DoubleConvertible {
+public extension Expectation where T: DoubleConvertible {
   
-  func beCloseTo(other: T, within: T, description: String = "") {
+  public func beCloseTo(other: T, within: T, description: String = "") {
     
     guard let expect = expect else {
       fail(self.description(__FUNCTION__, other, description))

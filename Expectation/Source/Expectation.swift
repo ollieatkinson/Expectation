@@ -42,12 +42,12 @@ public class Expectation<T> {
     description = "expect(\(expect == nil ? "nil" : "\(expect!)"))"
   }
   
-  var to: Expectation {
+  public var to: Expectation {
     description += ".to"
     return self
   }
   
-  var toNot: Expectation {
+  public var toNot: Expectation {
     
     description += ".toNot"
     invert       = !invert
@@ -55,7 +55,7 @@ public class Expectation<T> {
     return self
   }
   
-  var notTo: Expectation {
+  public var notTo: Expectation {
     
     description += ".notTo"
     invert       = !invert
