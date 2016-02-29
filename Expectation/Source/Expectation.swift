@@ -71,19 +71,19 @@ public class Expectation<T> {
     return self.description + ".\(function)\(description.isEmpty ? "" : " - \(description)")"
   }
   
-  func assertTrue(@autoclosure expression: () -> BooleanType, _ message: String) {
+  func assertTrue(expression: BooleanType, _ message: String) {
     (invert ? ExpectationAssertFunctions.assertFalse : ExpectationAssertFunctions.assertTrue)(expression, message, file: file, line: line)
   }
   
-  func assertFalse(@autoclosure expression: () -> BooleanType, _ message: String) {
+  func assertFalse(expression: BooleanType, _ message: String) {
     (invert ? ExpectationAssertFunctions.assertTrue : ExpectationAssertFunctions.assertFalse)(expression, message, file: file, line: line)
   }
   
-  func assertNil(@autoclosure expression: () -> Any?, _ message: String) {
+  func assertNil(expression: Any?, _ message: String) {
     (invert ? ExpectationAssertFunctions.assertNotNil : ExpectationAssertFunctions.assertNil)(expression, message, file: file, line: line)
   }
   
-  func assertNotNil(@autoclosure expression: () -> Any?, _ message: String) {
+  func assertNotNil(expression: Any?, _ message: String) {
     (invert ? ExpectationAssertFunctions.assertNil : ExpectationAssertFunctions.assertNotNil)(expression, message, file: file, line: line)
   }
   

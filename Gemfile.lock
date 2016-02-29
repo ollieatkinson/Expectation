@@ -5,6 +5,7 @@ GEM
     rouge (1.10.1)
     xcpretty (0.2.1)
       rouge (~> 1.8)
+    xcunique (0.0.1)
 
 PLATFORMS
   ruby
@@ -12,6 +13,7 @@ PLATFORMS
 DEPENDENCIES
   rake
   xcpretty
+  xcunique
 
 BUNDLED WITH
    1.11.2

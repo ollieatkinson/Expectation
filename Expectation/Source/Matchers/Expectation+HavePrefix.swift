@@ -10,12 +10,12 @@ public extension Expectation where T: StringLiteralConvertible {
   
   public func havePrefix(other: T, _ description: String = "") {
     
-    guard let expect = expect else {
+    if let expect = expect {
+      assertTrue("\(expect)".hasPrefix("\(other)"), self.description(__FUNCTION__, other, description))
+    } else {
       fail(self.description(__FUNCTION__, other, description))
-      return
     }
     
-    assertTrue("\(expect)".hasPrefix("\(other)"), self.description(__FUNCTION__, other, description))
   }
   
 }

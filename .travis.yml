@@ -1,14 +1,17 @@
 language: objective-c
 osx_image: xcode7.2
 
-before_install:
+install:
   - bundle install
+  
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 script:
   - bundle exec rake test
 
 env:
-  - "NAME=iPhone VERSION=8.0"
-  - "NAME=iPhone VERSION=9.0"
-  - "NAME=iPad VERSION=8.0"
-  - "NAME=iPad VERSION=9.0"
+  - "NAME='iPhone 6' VERSION=8.0"
+  - "NAME='iPhone 6' VERSION=9.0"
+  - "NAME='iPad Air' VERSION=8.0"
+  - "NAME='iPad Air' VERSION=9.0"
