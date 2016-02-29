@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension Expectation where T: NSObjectProtocol {
+public extension Expectation where T: NSObjectProtocol {
   
-  func beKindOfClass(klass: AnyClass, _ description: String = "") {
+  public func beKindOfClass(klass: AnyClass, _ description: String = "") {
     
     guard let expect = expect else {
       fail(self.description(__FUNCTION__, klass, description))

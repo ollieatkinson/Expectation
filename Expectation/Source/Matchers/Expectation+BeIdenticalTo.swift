@@ -6,9 +6,9 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-extension Expectation where T: AnyObject {
+public extension Expectation where T: AnyObject {
   
-  func beIdenticalTo(other: T, _ description: String = "") {
+  public func beIdenticalTo(other: T, _ description: String = "") {
     assertTrue(expect === other, self.description(__FUNCTION__, other, description))
   }
   

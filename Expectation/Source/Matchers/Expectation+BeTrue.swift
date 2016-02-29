@@ -6,9 +6,9 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-extension Expectation where T: Equatable, T: BooleanLiteralConvertible {
+public extension Expectation where T: Equatable, T: BooleanLiteralConvertible {
   
-  func beTrue(description: String = "") {
+  public func beTrue(description: String = "") {
     assertTrue(expect == true, self.description(__FUNCTION__, description))
   }
   
