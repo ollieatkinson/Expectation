@@ -9,7 +9,7 @@
 public extension Expectation where T: CollectionType {
   
   public func beEmpty(description: String = "") {
-    assertTrue(expect?.isEmpty ?? false, self.description(__FUNCTION__, description))
+    assertTrue(expect?.isEmpty ?? false, self.description(#function, description))
   }
   
 }

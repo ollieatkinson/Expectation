@@ -9,7 +9,7 @@
 public extension Expectation where T: Comparable {
 
   public func beGreaterThan(other: T, _ description: String = "") {
-    assertTrue(expect > other, self.description(__FUNCTION__, other, description))
+    assertTrue(expect > other, self.description(#function, other, description))
   }
   
 }

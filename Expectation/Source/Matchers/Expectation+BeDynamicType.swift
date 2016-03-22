@@ -9,7 +9,7 @@
 public extension Expectation {
   
   public func beDynamicType<U>(other: U.Type, _ description: String = "") {
-    assertTrue(expect?.dynamicType == other, self.description(__FUNCTION__, other, description))
+    assertTrue(expect?.dynamicType == other, self.description(#function, other, description))
   }
   
 }

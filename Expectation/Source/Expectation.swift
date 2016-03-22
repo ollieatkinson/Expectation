@@ -8,11 +8,11 @@
 
 import XCTest
 
-public func expect<T>(value: T?, file: String = __FILE__, line: UInt = __LINE__) -> Expectation<T> {
+public func expect<T>(value: T?, file: StaticString = #file, line: UInt = #line) -> Expectation<T> {
   return Expectation(value, file: file, line: line)
 }
 
-public func fail(reason: String = "", file: String = __FILE__, line: UInt = __LINE__) {
+public func fail(reason: String = "", file: StaticString = #file, line: UInt = #line) {
   ExpectationAssertFunctions.fail(reason, file: file, line: line)
 }
 
@@ -30,10 +30,10 @@ public class Expectation<T> {
   var description: String
   var invert = false
 
-  let file: String
+  let file: StaticString
   let line: UInt
   
-  init(_ expect: T?, file: String, line: UInt) {
+  init(_ expect: T?, file: StaticString, line: UInt) {
     
     self.expect   = expect
     self.file     = file

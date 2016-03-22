@@ -9,7 +9,7 @@
 public extension Expectation where T: CollectionType, T.Generator.Element: Equatable {
 
   public func contain(element: T.Generator.Element, _ description: String = "") {
-    assertFalse(expect?.indexOf(element) == nil, self.description(__FUNCTION__, element, description))
+    assertFalse(expect?.indexOf(element) == nil, self.description(#function, element, description))
   }
   
 }
