@@ -10,11 +10,11 @@ task :test do
   simulator = nil
 
   if name.nil? || version.nil?
-    simulator = Simulator.random(match: /^iPhone 6$/, exact_version: 9.2)
+    simulator = Simulator.random(pattern: /^iPhone 6$/, exact_version: 9.2)
   else 
-    simulator = Simulator.random(match: /^#{name}$/, min_version: version.to_f, max_version: (version.to_f + 1).floor)
+    simulator = Simulator.random(pattern: /^#{name}$/, min_version: version.to_f, max_version: (version.to_f + 1).floor)
   end
-    
+
   sh "set -o pipefail && " +
   "xcodebuild -scheme Expectation " +
               "-target Expectation " +

@@ -11,9 +11,15 @@ import XCTest
 
 class Expectation_HaveCountOf_Spec: XCTestCase {
   
-  override func setUp() {
-    super.setUp()
-    ExpectationAssertFunctions.assertTrue = XCTAssertTrue
+  override func tearDown() {
+    super.tearDown()
+    
+    ExpectationAssertFunctions.assertTrue   = ExpectationAssertFunctions.ExpectationAssertTrue
+    ExpectationAssertFunctions.assertFalse  = ExpectationAssertFunctions.ExpectationAssertFalse
+    ExpectationAssertFunctions.assertNil    = ExpectationAssertFunctions.ExpectationAssertNil
+    ExpectationAssertFunctions.assertNotNil = ExpectationAssertFunctions.ExpectationAssertNotNil
+    ExpectationAssertFunctions.fail         = ExpectationAssertFunctions.ExpectationFail
+    
   }
   
   func testHaveCountOfPass() {

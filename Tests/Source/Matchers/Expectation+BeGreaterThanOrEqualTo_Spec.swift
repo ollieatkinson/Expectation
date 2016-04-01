@@ -11,10 +11,14 @@ import XCTest
 
 class Expectation_BeGreaterThanOrEqualTo_Spec: XCTestCase {
   
-  override func setUp() {
-    super.setUp()
+  override func tearDown() {
+    super.tearDown()
     
-    ExpectationAssertFunctions.assertTrue  = XCTAssertTrue
+    ExpectationAssertFunctions.assertTrue   = ExpectationAssertFunctions.ExpectationAssertTrue
+    ExpectationAssertFunctions.assertFalse  = ExpectationAssertFunctions.ExpectationAssertFalse
+    ExpectationAssertFunctions.assertNil    = ExpectationAssertFunctions.ExpectationAssertNil
+    ExpectationAssertFunctions.assertNotNil = ExpectationAssertFunctions.ExpectationAssertNotNil
+    ExpectationAssertFunctions.fail         = ExpectationAssertFunctions.ExpectationFail
     
   }
   
