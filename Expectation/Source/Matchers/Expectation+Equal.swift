@@ -9,7 +9,7 @@
 public extension Expectation where T: Equatable {
   
   public func equal(other: T, _ description: String = "") {
-    assertTrue(expect == other, self.description(__FUNCTION__, other, description))
+    assertTrue(expect == other, self.description(#function, other, description))
   }
   
 }
@@ -19,9 +19,9 @@ public extension Expectation where T: CollectionType, T.Generator.Element: Equat
   public func equal(other: T, _ description: String = "") {
     
     if let expect = expect {
-      assertTrue(Array(expect) == Array(other), self.description(__FUNCTION__, other, description))
+      assertTrue(Array(expect) == Array(other), self.description(#function, other, description))
     } else {
-      fail(self.description(__FUNCTION__, other, description))
+      fail(self.description(#function, other, description))
     }
     
   }

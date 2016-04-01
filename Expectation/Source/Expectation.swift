@@ -8,20 +8,12 @@
 
 import XCTest
 
-public func expect<T>(value: T?, file: String = __FILE__, line: UInt = __LINE__) -> Expectation<T> {
+public func expect<T>(value: T?, file: StaticString = #file, line: UInt = #line) -> Expectation<T> {
   return Expectation(value, file: file, line: line)
 }
 
-public func fail(reason: String = "", file: String = __FILE__, line: UInt = __LINE__) {
+public func fail(reason: String = "", file: StaticString = #file, line: UInt = #line) {
   ExpectationAssertFunctions.fail(reason, file: file, line: line)
-}
-
-public class ExpectationAssertFunctions {
-  static var assertTrue   = XCTAssertTrue
-  static var assertFalse  = XCTAssertFalse
-  static var assertNil    = XCTAssertNil
-  static var assertNotNil = XCTAssertNotNil
-  static var fail         = XCTFail
 }
 
 public class Expectation<T> {
@@ -30,10 +22,10 @@ public class Expectation<T> {
   var description: String
   var invert = false
 
-  let file: String
+  let file: StaticString
   let line: UInt
   
-  init(_ expect: T?, file: String, line: UInt) {
+  init(_ expect: T?, file: StaticString, line: UInt) {
     
     self.expect   = expect
     self.file     = file
@@ -89,6 +81,36 @@ public class Expectation<T> {
   
   func fail(message: String) {
     ExpectationAssertFunctions.fail(message, file: file, line: line)
+  }
+  
+}
+
+public class ExpectationAssertFunctions {
+  
+  static var assertTrue   = ExpectationAssertFunctions.ExpectationAssertTrue
+  static var assertFalse  = ExpectationAssertFunctions.ExpectationAssertFalse
+  static var assertNil    = ExpectationAssertFunctions.ExpectationAssertNil
+  static var assertNotNil = ExpectationAssertFunctions.ExpectationAssertNotNil
+  static var fail         = ExpectationAssertFunctions.ExpectationFail
+  
+  public static func ExpectationAssertTrue(expression: BooleanType, _ message: String, file: StaticString, line: UInt) -> Void {
+    XCTAssertTrue(expression, message, file: file, line: line)
+  }
+  
+  public static func ExpectationAssertFalse(expression: BooleanType, _ message: String, file: StaticString, line: UInt) -> Void {
+    XCTAssertFalse(expression, message, file: file, line: line)
+  }
+  
+  public static func ExpectationAssertNil(expression: Any?, _ message: String, file: StaticString, line: UInt) -> Void {
+    XCTAssertNil(expression, message, file: file, line: line)
+  }
+  
+  public static func ExpectationAssertNotNil(expression: Any?, _ message: String, file: StaticString, line: UInt) -> Void {
+    XCTAssertNotNil(expression, message, file: file, line: line)
+  }
+  
+  public static func ExpectationFail(message: String, file: StaticString, line: UInt) -> Void {
+    XCTFail(message, file: file, line: line)
   }
   
 }

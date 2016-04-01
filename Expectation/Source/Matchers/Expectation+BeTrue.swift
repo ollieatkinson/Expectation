@@ -9,7 +9,7 @@
 public extension Expectation where T: Equatable, T: BooleanLiteralConvertible {
   
   public func beTrue(description: String = "") {
-    assertTrue(expect == true, self.description(__FUNCTION__, description))
+    assertTrue(expect == true, self.description(#function, description))
   }
   
 }

@@ -11,22 +11,23 @@ import XCTest
 
 extension XCTestCase {
   
-  typealias AssertBoolean  = (BooleanType, String, file: String, line: UInt) -> Void
-  typealias AssertOptional = (Any?,        String, file: String, line: UInt) -> Void
+  typealias AssertBoolean  = (BooleanType, String, file: StaticString, line: UInt) -> Void
+  typealias AssertOptional = (Any?,        String, file: StaticString, line: UInt) -> Void
   
-  func True(expression: BooleanType, message: String, file: String, line: UInt) -> Void {
+  
+  func True(expression: BooleanType, message: String, file: StaticString, line: UInt) -> Void {
     XCTAssertTrue(expression, message, file: file, line: line)
   }
   
-  func False(expression: BooleanType, message: String, file: String, line: UInt) -> Void {
+  func False(expression: BooleanType, message: String, file: StaticString, line: UInt) -> Void {
     XCTAssertFalse(expression, message, file: file, line: line)
   }
   
-  func Nil(expression: Any?, message: String, file: String, line: UInt) -> Void {
+  func Nil(expression: Any?, message: String, file: StaticString, line: UInt) -> Void {
     XCTAssertNil(expression, message, file: file, line: line)
   }
   
-  func NotNil(expression: Any?, message: String, file: String, line: UInt) -> Void {
+  func NotNil(expression: Any?, message: String, file: StaticString, line: UInt) -> Void {
     XCTAssertNotNil(expression, message, file: file, line: line)
   }
   
@@ -34,20 +35,20 @@ extension XCTestCase {
     
     let assertTrue = expectationWithDescription("assertTrue is executed")
     
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
-      function(expression(), message, file: file, line: line)
+    ExpectationAssertFunctions.assertTrue = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
+      function(expression, message, file: file, line: line)
       assertTrue.fulfill()
     }
     
-    ExpectationAssertFunctions.assertFalse = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    ExpectationAssertFunctions.assertFalse = { (expression: BooleanType, message, file, line) in
       XCTFail("assertFalse not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
+    ExpectationAssertFunctions.assertNil = { (expression: Any?, message, file, line) in
       XCTFail("assertNil not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertNotNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
+    ExpectationAssertFunctions.assertNotNil = { (expression: Any?, message, file, line) in
       XCTFail("assertNotNil not expected", file: file, line: line)
     }
     
@@ -67,20 +68,20 @@ extension XCTestCase {
     
     let assertFalse = expectationWithDescription("assertFalse is executed")
     
-    ExpectationAssertFunctions.assertFalse = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
-      function(expression(), message, file: file, line: line)
+    ExpectationAssertFunctions.assertFalse = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
+      function(expression, message, file: file, line: line)
       assertFalse.fulfill()
     }
     
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    ExpectationAssertFunctions.assertTrue = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
       XCTFail("assertTrue not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
+    ExpectationAssertFunctions.assertNil = { (expression: Any?, message, file, line) in
       XCTFail("assertNil not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertNotNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
+    ExpectationAssertFunctions.assertNotNil = { (expression: Any?, message, file, line) in
       XCTFail("assertNotNil not expected", file: file, line: line)
     }
     
@@ -100,20 +101,20 @@ extension XCTestCase {
     
     let assertNil = expectationWithDescription("assertNil is executed")
     
-    ExpectationAssertFunctions.assertNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
-      function(expression(), message, file: file, line: line)
+    ExpectationAssertFunctions.assertNil = { (expression: Any?, message, file, line) in
+      function(expression, message, file: file, line: line)
       assertNil.fulfill()
     }
     
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    ExpectationAssertFunctions.assertTrue = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
       XCTFail("assertTrue not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertFalse = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    ExpectationAssertFunctions.assertFalse = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
       XCTFail("assertFalse not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertNotNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
+    ExpectationAssertFunctions.assertNotNil = { (expression: Any?, message, file, line) in
       XCTFail("assertNotNil not expected", file: file, line: line)
     }
     
@@ -133,20 +134,20 @@ extension XCTestCase {
     
     let assertNotNil = expectationWithDescription("assertNotNil is executed")
     
-    ExpectationAssertFunctions.assertNotNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
-      function(expression(), message, file: file, line: line)
+    ExpectationAssertFunctions.assertNotNil = { (expression: Any?, message, file, line) in
+      function(expression, message, file: file, line: line)
       assertNotNil.fulfill()
     }
     
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    ExpectationAssertFunctions.assertTrue = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
       XCTFail("assertTrue not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertFalse = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    ExpectationAssertFunctions.assertFalse = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
       XCTFail("assertFalse not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
+    ExpectationAssertFunctions.assertNil = { (expression: Any?, message, file, line) in
       XCTFail("assertNil not expected", file: file, line: line)
     }
     
@@ -170,19 +171,19 @@ extension XCTestCase {
       fail.fulfill()
     }
     
-    ExpectationAssertFunctions.assertTrue = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    ExpectationAssertFunctions.assertTrue = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
       XCTFail("assertTrue not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertFalse = { (@autoclosure expression: Void -> BooleanType, message, file, line) in
+    ExpectationAssertFunctions.assertFalse = { (expression: BooleanType, message: String, file: StaticString, line: UInt) in
       XCTFail("assertFalse not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
+    ExpectationAssertFunctions.assertNil = { (expression: Any?, message, file, line) in
       XCTFail("assertNil not expected", file: file, line: line)
     }
     
-    ExpectationAssertFunctions.assertNotNil = { (@autoclosure expression: Void -> Any?, message, file, line) in
+    ExpectationAssertFunctions.assertNotNil = { (expression: Any?, message, file, line) in
       XCTFail("assertNotNil not expected", file: file, line: line)
     }
     

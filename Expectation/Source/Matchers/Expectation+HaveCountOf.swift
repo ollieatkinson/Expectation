@@ -9,7 +9,7 @@
 public extension Expectation where T: CollectionType {
   
   public func haveCountOf(count: T.Index.Distance, description: String = "") {
-    assertTrue(expect?.count == count, self.description(__FUNCTION__, count, description))
+    assertTrue(expect?.count == count, self.description(#function, count, description))
   }
   
 }

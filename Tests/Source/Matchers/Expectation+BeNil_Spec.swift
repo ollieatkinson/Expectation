@@ -11,14 +11,18 @@ import XCTest
 
 class Expectation_BeNil_Spec: XCTestCase {
   
-  class NilClass {
+  override func tearDown() {
+    super.tearDown()
+    
+    ExpectationAssertFunctions.assertTrue   = ExpectationAssertFunctions.ExpectationAssertTrue
+    ExpectationAssertFunctions.assertFalse  = ExpectationAssertFunctions.ExpectationAssertFalse
+    ExpectationAssertFunctions.assertNil    = ExpectationAssertFunctions.ExpectationAssertNil
+    ExpectationAssertFunctions.assertNotNil = ExpectationAssertFunctions.ExpectationAssertNotNil
+    ExpectationAssertFunctions.fail         = ExpectationAssertFunctions.ExpectationFail
     
   }
-
-  override func setUp() {
-    super.setUp()
-    
-    ExpectationAssertFunctions.assertNil = XCTAssertNil
+  
+  class NilClass {
     
   }
   

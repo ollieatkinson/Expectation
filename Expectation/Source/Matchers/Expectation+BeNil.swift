@@ -9,7 +9,7 @@
 public extension Expectation {
   
   public func beNil(description: String = "") {
-    assertNil(expect, self.description(__FUNCTION__, description))
+    assertNil(expect, self.description(#function, description))
   }
   
 }

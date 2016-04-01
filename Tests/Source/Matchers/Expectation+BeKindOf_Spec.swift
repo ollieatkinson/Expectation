@@ -1,5 +1,5 @@
 //
-//  Expectation+BeLessThanOrEqualTo_Spec.swift
+//  Expectation+BeKindOfClass_Spec.swift
 //  Expectation
 //
 //  Created by Atkinson, Oliver (Developer) on 23/02/2016.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Expectation
 
-class Expectation_BeLessThanOrEqualTo_Spec: XCTestCase {
+class Expectation_BeKindOf_Spec: XCTestCase {
   
   override func tearDown() {
     super.tearDown()
@@ -22,24 +22,53 @@ class Expectation_BeLessThanOrEqualTo_Spec: XCTestCase {
     
   }
   
-  func testBeLessThanOrEqualToPass() {
+  struct A {
+    
+  }
+  
+  struct B {
+    
+  }
+  
+  func testBeKindOfPass() {
     
     assertTrueValidate(True) {
-      expect(1).to.beLessThanOrEqualTo(2)
+      expect(NSObject()).to.beKindOf(NSObject.self)
     }
     
     assertTrueValidate(True) {
-      expect(1).to.beLessThanOrEqualTo(1)
+      expect(A()).to.beKindOf(A.self)
     }
     
   }
   
-  func testBeLessThanOrEqualToFail() {
+  func testBeKindOfFail() {
     
     assertTrueValidate(False) {
-      expect(2).to.beLessThanOrEqualTo(1)
+      expect(NSObject()).to.beKindOf(NSFileManager.self)
+    }
+    
+    assertTrueValidate(False) {
+      let value: NSObject? = nil
+      expect(value).to.beKindOf(NSFileManager.self)
+    }
+    
+    assertTrueValidate(False) {
+      expect(A()).to.beKindOf(B.self)
     }
     
   }
   
+  func testBeKindOfInverse() {
+    
+    assertFalseValidate(True) {
+      expect(NSObject()).toNot.beKindOf(NSObject.self)
+    }
+    
+    assertFalseValidate(True) {
+      expect(NSObject()).notTo.beKindOf(NSObject.self)
+    }
+    
+  }
+
 }

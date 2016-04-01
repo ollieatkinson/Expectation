@@ -11,7 +11,7 @@ import Foundation
 public extension Expectation where T: NSObjectProtocol {
 
   public func conformTo(aProtocol: Protocol, _ description: String = "") {
-    assertTrue(expect?.conformsToProtocol(aProtocol) ?? false, self.description(__FUNCTION__, aProtocol, description))
+    assertTrue(expect?.conformsToProtocol(aProtocol) ?? false, self.description(#function, aProtocol, description))
   }
   
 }
