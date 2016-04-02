@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Expectation"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "XCTest Matcher framework for Swift"
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
 
   s.module_name         = "Expectation"
-  s.source              = { git: "https://github.com/ollieatkinson/Expectation.git", tag: "0.0.2" }
+  s.source              = { git: "https://github.com/ollieatkinson/Expectation.git", tag: "0.0.3" }
   s.source_files        = "Expectation/**/*.{swift,h,m}"
   s.frameworks          = [ "Foundation" ]
   s.weak_framework      = "XCTest"

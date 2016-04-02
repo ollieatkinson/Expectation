@@ -14,6 +14,8 @@ Expectation provides additional methods for an expectation using protocol extens
 
 ## Installation
 
+_The latest build 0.0.3 is made for swift 2.2, if you require swift 2.1 please use version 0.0.2._
+
 ### CocoaPods
 
 Integrate Expectation using a Podfile:
@@ -37,12 +39,6 @@ Expectation provides easy to use syntax without the need to specify data types. 
 
 ```swift
 expect("Mario").toNot.equal("Luigi")
-expect(value).to.beNil()
-expect(true).to.beTrue()
-expect(index).to.beLessThanOrEqualTo(2, "index should be less than or equal to 2")
-expect(NSURL(string: "http://google.com")).to.beKindOfClass(NSURL)
-expect([ "Cow", "Sheep", "Dog" ]).to.contain("Cow")
-expect(Double(1.2)).toNot.beCloseTo(1, within: 0.1)
 ```
 
 ## Built-in matchers
@@ -74,8 +70,8 @@ expect(Double(1.2)).toNot.beCloseTo(1, within: 0.1)
 > `expect(x).to.beDynamicType(y)`
 > passes if `x` has dynamic type `y`. Can be used on `class` and `struct`.
 
-> `expect(x).to.beKindOfClass(y)`
-> passes if `x` is an instance of class `y`.
+> `expect(x).to.beKindOf(y)`
+> passes if `x` is an instance of `y` (class, struct and protocol).
 
 > `expect(x).to.beCloseTo(y, within: z)`
 > passes if `x` is close to `y` within `z`.
@@ -93,18 +89,16 @@ expect(Double(1.2)).toNot.beCloseTo(1, within: 0.1)
 > passes if `x` is greater than or equal to `y`.
 
 > `expect(x).to.conformTo(y)`
-> passes if `x` conforms to the protocol `y`. __*__
+> passes if `x` conforms to the NSProtocol `y`.
 
 > `expect(x).to.respondTo(y)`
-> passes if `x` conforms to the protocol `y`. __*__
+> passes if `x` responds to the method `y`.
 
 > `expect(x).to.havePrefix(y)` 
 > passes if String `x` begins with `y`.
 
 > `expect(x).to.haveSuffix(y)` 
 > passes if String `x` ends with `y`.
-
-\* NSObject only for the time being, pull requests accepted to add functionality for swift only classes.
 
 ## Inverting Matchers
 
@@ -168,10 +162,8 @@ The custom description should be passed in along with the function name and valu
 ## Future Improvements
 
 - [ ] Asynchronous Matching
-- [ ] Protocol conformTo for swift structs and classes
-- [ ] Exception matchers
+- [ ] do-try-catch matchers
 - [ ] NSNotification matchers
-- [ ] What would it take to make this available for Objective-C too?
 
 ...
 
