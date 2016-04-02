@@ -28,15 +28,14 @@
 		6d893be37914e17da621444a5fc88663 /* Expectation+ConformTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110bdc95328bd0cd87a33cdcf75fdca7 /* Expectation+ConformTo_Spec.swift */; };
 		7dc40c77337c3914a22a5586a8bc5235 /* Expectation+RespondTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14be927eac9a271517ab819bd54aa52c /* Expectation+RespondTo_Spec.swift */; };
 		8977c2b15df16ad215ab28b976f56ed6 /* Expectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 56450f64274b6bb7d4c9829be09bec2b /* Expectation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8c7778a04a61a7a4256c8c3723aab02c /* Expectation+BeKindOf_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6746cebb7b32f34937662cfa66319aa6 /* Expectation+BeKindOf_Spec.swift */; };
 		8e9ff444aec591a1f7fb7fd180ae6561 /* Expectation+ConformTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870954e9344ac9c9f487a743b4faa2bf /* Expectation+ConformTo.swift */; };
 		94059eaa74ff1d9f9f5a9b5d54092324 /* Expectation+BeIdenticalTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519a8b5232638906128d8009b7766eb9 /* Expectation+BeIdenticalTo_Spec.swift */; };
 		94f59331bfeb80acb181fa01720609c8 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = e655280587e102be7e767afed5c99c97 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift */; };
-		FE4279461CAF2A75006195A1 /* Expectation_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4279451CAF2A75006195A1 /* Expectation_Spec.swift */; };
 		a55842c611b631422d8a3d6b177921b7 /* Expectation+BeNil_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212e116733f95d8d7cadbdf95bbda26a /* Expectation+BeNil_Spec.swift */; };
 		a6874954b342e25e4e35ce8fcf27745c /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = c829173d074dc4a058be75d5e23e88dd /* Expectation.swift */; };
 		a706043ba96b0f20a8d05a4e0bce2f15 /* Expectation+Equal_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = cce8f381ef3294c493cf3bf27e1624fa /* Expectation+Equal_Spec.swift */; };
 		a783f956935e95231d96656049c32621 /* Expectation+BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = cceedcaebdcc1326f9c749b355a2d815 /* Expectation+BeEmpty.swift */; };
+		b5994c2c7a3149f177f9cffda0451451 /* Expectation+BeKindOf_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ad19f394fb83215f11aa3447a898b327 /* Expectation+BeKindOf_Spec.swift */; };
 		b806e543e0b5d182faadf2b4b601a533 /* Expectation+HaveSuffix_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = c98482ef87d319bb2ea5cf92c52eda06 /* Expectation+HaveSuffix_Spec.swift */; };
 		b8205e624fb953238b5af92901c04c39 /* Expectation+BeGreaterThan_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7a04a8c56bb3e4797b53bb8dd9c01faa /* Expectation+BeGreaterThan_Spec.swift */; };
 		bddd1063606f7041d5e56a67ef8a7e3c /* Expectation+BeKindOfClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = b1c313c2de0d6e8b942fac9d099ee05a /* Expectation+BeKindOfClass.swift */; };
@@ -49,6 +48,7 @@
 		e7305ae3830b1b2d66655b4e86122f15 /* Expectation+Contain_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98f095dc629a028bf4076ae2447d317d /* Expectation+Contain_Spec.swift */; };
 		ee40ad60566305d2e0d35aea8f3a6dd2 /* Expectation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = c1c685f0d4a5f36b004544fb1ed2cac3 /* Expectation.framework */; };
 		f77cf39d2c008467a61ac4d42036c7f2 /* Expectation+BeFalse_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = bfc6f9ce128873514405feb56b3e44a8 /* Expectation+BeFalse_Spec.swift */; };
+		fa1e1fd33998cfe9abb59677a3e9478b /* Expectation_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = eb18f0e1b4be6f3672458acc8813d9c3 /* Expectation_Spec.swift */; };
 		fa7c414854b478add63427309f4278e9 /* Expectation+BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ea079f0b1364832331981bc969b850 /* Expectation+BeCloseTo.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +81,6 @@
 		519a8b5232638906128d8009b7766eb9 /* Expectation+BeIdenticalTo_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeIdenticalTo_Spec.swift"; sourceTree = "<group>"; };
 		52ea079f0b1364832331981bc969b850 /* Expectation+BeCloseTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Expectation+BeCloseTo.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		56450f64274b6bb7d4c9829be09bec2b /* Expectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expectation.h; sourceTree = "<group>"; };
-		6746cebb7b32f34937662cfa66319aa6 /* Expectation+BeKindOf_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeKindOf_Spec.swift"; sourceTree = "<group>"; };
 		69218df22665a46088917fe47042b8ec /* Expectation+BeFalse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Expectation+BeFalse.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77dee871ba91a2a1f822f2ee69c810c8 /* Expectation+BeGreaterThan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Expectation+BeGreaterThan.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7a04a8c56bb3e4797b53bb8dd9c01faa /* Expectation+BeGreaterThan_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeGreaterThan_Spec.swift"; sourceTree = "<group>"; };
@@ -91,7 +90,7 @@
 		98f095dc629a028bf4076ae2447d317d /* Expectation+Contain_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+Contain_Spec.swift"; sourceTree = "<group>"; };
 		991d46259d24d33df8e5b01ad2d4dd9e /* Expectation+HavePrefix_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+HavePrefix_Spec.swift"; sourceTree = "<group>"; };
 		9a124a22783e58893cc15d10d20e2a6b /* Expectation+BeLessThan_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeLessThan_Spec.swift"; sourceTree = "<group>"; };
-		FE4279451CAF2A75006195A1 /* Expectation_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expectation_Spec.swift; sourceTree = "<group>"; };
+		ad19f394fb83215f11aa3447a898b327 /* Expectation+BeKindOf_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeKindOf_Spec.swift"; sourceTree = "<group>"; };
 		b09f23a5cb8eed49362dc04e4f0b22d9 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		b1c313c2de0d6e8b942fac9d099ee05a /* Expectation+BeKindOfClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Expectation+BeKindOfClass.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		b677404f3c35a684671614001ca41701 /* Expectation+HaveCountOf_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+HaveCountOf_Spec.swift"; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		cefcfba9dee2a4a444ca759c61af22a8 /* Expectation+BeLessThanOrEqualTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Expectation+BeLessThanOrEqualTo.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		e2074224369b93f4b09a5ccde4655dd3 /* Expectation+BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Expectation+BeGreaterThanOrEqualTo.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		e655280587e102be7e767afed5c99c97 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeGreaterThanOrEqualTo_Spec.swift"; sourceTree = "<group>"; };
+		eb18f0e1b4be6f3672458acc8813d9c3 /* Expectation_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expectation_Spec.swift; sourceTree = "<group>"; };
 		ef8572e3db58cb7bd54c3dc90ce63c0b /* Expectation+BeNil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Expectation+BeNil.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		fed07e4b172e08eee35602a3c2f06c93 /* Expectation+BeLessThanOrEqualTo_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeLessThanOrEqualTo_Spec.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,7 +159,7 @@
 				e655280587e102be7e767afed5c99c97 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift */,
 				7a04a8c56bb3e4797b53bb8dd9c01faa /* Expectation+BeGreaterThan_Spec.swift */,
 				519a8b5232638906128d8009b7766eb9 /* Expectation+BeIdenticalTo_Spec.swift */,
-				6746cebb7b32f34937662cfa66319aa6 /* Expectation+BeKindOf_Spec.swift */,
+				ad19f394fb83215f11aa3447a898b327 /* Expectation+BeKindOf_Spec.swift */,
 				fed07e4b172e08eee35602a3c2f06c93 /* Expectation+BeLessThanOrEqualTo_Spec.swift */,
 				9a124a22783e58893cc15d10d20e2a6b /* Expectation+BeLessThan_Spec.swift */,
 				212e116733f95d8d7cadbdf95bbda26a /* Expectation+BeNil_Spec.swift */,
@@ -179,8 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				204303237eb4a7501d7c1b2e2ea2c319 /* Matchers */,
+				eb18f0e1b4be6f3672458acc8813d9c3 /* Expectation_Spec.swift */,
 				214544330fb3da68b291453215e73f81 /* XCTestCaseAssertionSubstitutes.swift */,
-				FE4279451CAF2A75006195A1 /* Expectation_Spec.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -398,19 +398,19 @@
 				94f59331bfeb80acb181fa01720609c8 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift in Sources */,
 				b8205e624fb953238b5af92901c04c39 /* Expectation+BeGreaterThan_Spec.swift in Sources */,
 				94059eaa74ff1d9f9f5a9b5d54092324 /* Expectation+BeIdenticalTo_Spec.swift in Sources */,
-				8c7778a04a61a7a4256c8c3723aab02c /* Expectation+BeKindOf_Spec.swift in Sources */,
+				b5994c2c7a3149f177f9cffda0451451 /* Expectation+BeKindOf_Spec.swift in Sources */,
 				3f070ba3b2c1339b8853e835fa99cdd8 /* Expectation+BeLessThanOrEqualTo_Spec.swift in Sources */,
 				103bac1c42f3a52a3ffbd1bd2b5ca942 /* Expectation+BeLessThan_Spec.swift in Sources */,
 				a55842c611b631422d8a3d6b177921b7 /* Expectation+BeNil_Spec.swift in Sources */,
 				4225b0dbac2deb64946ab8aeb08604f3 /* Expectation+BeTrue_Spec.swift in Sources */,
 				6d893be37914e17da621444a5fc88663 /* Expectation+ConformTo_Spec.swift in Sources */,
-				FE4279461CAF2A75006195A1 /* Expectation_Spec.swift in Sources */,
 				e7305ae3830b1b2d66655b4e86122f15 /* Expectation+Contain_Spec.swift in Sources */,
 				a706043ba96b0f20a8d05a4e0bce2f15 /* Expectation+Equal_Spec.swift in Sources */,
 				d8e050532379d47d3a12d2efcf123cc3 /* Expectation+HaveCountOf_Spec.swift in Sources */,
 				d25e1ee5525b4b35032c7c4ffce01436 /* Expectation+HavePrefix_Spec.swift in Sources */,
 				b806e543e0b5d182faadf2b4b601a533 /* Expectation+HaveSuffix_Spec.swift in Sources */,
 				7dc40c77337c3914a22a5586a8bc5235 /* Expectation+RespondTo_Spec.swift in Sources */,
+				fa1e1fd33998cfe9abb59677a3e9478b /* Expectation_Spec.swift in Sources */,
 				2a50b5b4962365eb94273bd8046552bd /* XCTestCaseAssertionSubstitutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
