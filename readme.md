@@ -122,7 +122,7 @@ Matchers are simple and easy to follow.
 extension Expectation where T: Comparable {
   
   func beLessThan(other: T, _ description: String = "") {
-    assertTrue(expect < other, self.description(__FUNCTION__, other, description))
+    assertTrue(expect < other, self.description(#function, other, description))
   }
 
 }
@@ -154,7 +154,7 @@ There are a few assertion methods to use
 These should be used to validate the input for the function.
 
 ```swift
-assertTrue(expect < other, self.description(__FUNCTION__, other, description))
+assertTrue(expect < other, self.description(#function, other, description))
 ```
 
 The custom description should be passed in along with the function name and value.
