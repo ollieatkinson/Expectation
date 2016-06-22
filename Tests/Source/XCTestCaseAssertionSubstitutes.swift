@@ -12,7 +12,7 @@ import XCTest
 extension XCTestCase {
   
   typealias AssertBoolean  = (BooleanType, String, file: StaticString, line: UInt) -> Void
-  typealias AssertOptional = (Any?,        String, file: StaticString, line: UInt) -> Void
+  typealias AssertOptional = (Any?, String, file: StaticString, line: UInt) -> Void
   
   
   func True(expression: BooleanType, message: String, file: StaticString, line: UInt) -> Void {

@@ -16,8 +16,8 @@ task :test do
   end
 
   sh "set -o pipefail && " +
-  "xcodebuild -scheme Expectation " +
-              "-target Expectation " +
+  "xcodebuild -scheme iOS " +
+              "-target iOS " +
               "-destination id=#{simulator.udid} " +
               "-enableCodeCoverage YES " +
               "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES " +
