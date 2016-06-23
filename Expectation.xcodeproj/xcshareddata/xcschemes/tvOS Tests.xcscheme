@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,9 +16,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE18449B1C7A163E00047B37"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
+               BlueprintIdentifier = "FEEBA6751D1A7E1200ED24DE"
+               BuildableName = "tvOS Tests.xctest"
+               BlueprintName = "tvOS Tests"
                ReferencedContainer = "container:Expectation.xcodeproj">
             </BuildableReference>
          </TestableReference>

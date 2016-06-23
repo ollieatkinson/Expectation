@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -11,13 +11,12 @@
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
-            buildForAnalyzing = "YES"
-            hideIssues = "NO">
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3c1df4d2e274cd15ab6419c07bbcf063"
+               BlueprintIdentifier = "FEEBA6691D1A7DED00ED24DE"
                BuildableName = "Expectation.framework"
-               BlueprintName = "Expectation"
+               BlueprintName = "tvOS"
                ReferencedContainer = "container:Expectation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6eed5d8e065047e41b774284f3d43e33"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
+               BlueprintIdentifier = "FEEBA6751D1A7E1200ED24DE"
+               BuildableName = "tvOS Tests.xctest"
+               BlueprintName = "tvOS Tests"
                ReferencedContainer = "container:Expectation.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3c1df4d2e274cd15ab6419c07bbcf063"
+            BlueprintIdentifier = "FEEBA6691D1A7DED00ED24DE"
             BuildableName = "Expectation.framework"
-            BlueprintName = "Expectation"
+            BlueprintName = "tvOS"
             ReferencedContainer = "container:Expectation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,13 +61,13 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "NO">
+      allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3c1df4d2e274cd15ab6419c07bbcf063"
+            BlueprintIdentifier = "FEEBA6691D1A7DED00ED24DE"
             BuildableName = "Expectation.framework"
-            BlueprintName = "Expectation"
+            BlueprintName = "tvOS"
             ReferencedContainer = "container:Expectation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,9 +83,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3c1df4d2e274cd15ab6419c07bbcf063"
+            BlueprintIdentifier = "FEEBA6691D1A7DED00ED24DE"
             BuildableName = "Expectation.framework"
-            BlueprintName = "Expectation"
+            BlueprintName = "tvOS"
             ReferencedContainer = "container:Expectation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

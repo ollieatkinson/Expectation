@@ -31,6 +31,91 @@
 		8e9ff444aec591a1f7fb7fd180ae6561 /* Expectation+ConformTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870954e9344ac9c9f487a743b4faa2bf /* Expectation+ConformTo.swift */; };
 		94059eaa74ff1d9f9f5a9b5d54092324 /* Expectation+BeIdenticalTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519a8b5232638906128d8009b7766eb9 /* Expectation+BeIdenticalTo_Spec.swift */; };
 		94f59331bfeb80acb181fa01720609c8 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = e655280587e102be7e767afed5c99c97 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift */; };
+		FE4D5EEF1D19EF55009ABCD6 /* Expectation+BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ea079f0b1364832331981bc969b850 /* Expectation+BeCloseTo.swift */; };
+		FE4D5EF01D19EF55009ABCD6 /* Expectation+BeDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3a18ee94823893a673de7857438dce25 /* Expectation+BeDynamicType.swift */; };
+		FE4D5EF11D19EF55009ABCD6 /* Expectation+BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = cceedcaebdcc1326f9c749b355a2d815 /* Expectation+BeEmpty.swift */; };
+		FE4D5EF21D19EF55009ABCD6 /* Expectation+BeFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69218df22665a46088917fe47042b8ec /* Expectation+BeFalse.swift */; };
+		FE4D5EF31D19EF55009ABCD6 /* Expectation+BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77dee871ba91a2a1f822f2ee69c810c8 /* Expectation+BeGreaterThan.swift */; };
+		FE4D5EF41D19EF55009ABCD6 /* Expectation+BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = e2074224369b93f4b09a5ccde4655dd3 /* Expectation+BeGreaterThanOrEqualTo.swift */; };
+		FE4D5EF51D19EF55009ABCD6 /* Expectation+BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = bffdc35bf9f73c3427e3847e2cf5bcb2 /* Expectation+BeIdenticalTo.swift */; };
+		FE4D5EF61D19EF55009ABCD6 /* Expectation+BeKindOfClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = b1c313c2de0d6e8b942fac9d099ee05a /* Expectation+BeKindOfClass.swift */; };
+		FE4D5EF71D19EF55009ABCD6 /* Expectation+BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ebd0d6076de32c7d1ab7993f5d798e3 /* Expectation+BeLessThan.swift */; };
+		FE4D5EF81D19EF55009ABCD6 /* Expectation+BeLessThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = cefcfba9dee2a4a444ca759c61af22a8 /* Expectation+BeLessThanOrEqualTo.swift */; };
+		FE4D5EF91D19EF55009ABCD6 /* Expectation+BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ef8572e3db58cb7bd54c3dc90ce63c0b /* Expectation+BeNil.swift */; };
+		FE4D5EFA1D19EF55009ABCD6 /* Expectation+BeTrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3a7c6cdc1783bdfca8574880b31c21c7 /* Expectation+BeTrue.swift */; };
+		FE4D5EFB1D19EF55009ABCD6 /* Expectation+ConformTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870954e9344ac9c9f487a743b4faa2bf /* Expectation+ConformTo.swift */; };
+		FE4D5EFC1D19EF55009ABCD6 /* Expectation+Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124d0c5b5b76ca0bd84e8d84b5b5c188 /* Expectation+Contain.swift */; };
+		FE4D5EFD1D19EF55009ABCD6 /* Expectation+Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18a77d26ef994acb8e1a16971d26200f /* Expectation+Equal.swift */; };
+		FE4D5EFE1D19EF55009ABCD6 /* Expectation+HaveCountOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01fb5aba5cfb0b7b1a9ee68dd177d214 /* Expectation+HaveCountOf.swift */; };
+		FE4D5EFF1D19EF55009ABCD6 /* Expectation+HavePrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ec1f20a4824d161c117ba915b0074f /* Expectation+HavePrefix.swift */; };
+		FE4D5F001D19EF55009ABCD6 /* Expectation+HaveSuffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = ccd84ffd98c7bce271e4a3292a87f1cd /* Expectation+HaveSuffix.swift */; };
+		FE4D5F011D19EF55009ABCD6 /* Expectation+RespondTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4b8692e7e08e3a51aaebbcb54cb3598f /* Expectation+RespondTo.swift */; };
+		FE4D5F021D19EF55009ABCD6 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = c829173d074dc4a058be75d5e23e88dd /* Expectation.swift */; };
+		FE4D5F031D19EF5C009ABCD6 /* Expectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 56450f64274b6bb7d4c9829be09bec2b /* Expectation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEEBA6521D19F1F500ED24DE /* Expectation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4D5EE61D19EF09009ABCD6 /* Expectation.framework */; };
+		FEEBA67B1D1A7E1200ED24DE /* Expectation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEBA66A1D1A7DED00ED24DE /* Expectation.framework */; };
+		FEEBA6811D1A7E6900ED24DE /* Expectation+BeCloseTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303a9e8823d0060fc70c9f3caaee79a /* Expectation+BeCloseTo_Spec.swift */; };
+		FEEBA6821D1A7E6900ED24DE /* Expectation+BeDynamicType_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4dd49d2f705191ccc85a46ac5936affc /* Expectation+BeDynamicType_Spec.swift */; };
+		FEEBA6831D1A7E6900ED24DE /* Expectation+BeEmpty_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ca0ffbb8a032c51d4dc6d23e3ca91ab9 /* Expectation+BeEmpty_Spec.swift */; };
+		FEEBA6841D1A7E6900ED24DE /* Expectation+BeFalse_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = bfc6f9ce128873514405feb56b3e44a8 /* Expectation+BeFalse_Spec.swift */; };
+		FEEBA6851D1A7E6900ED24DE /* Expectation+BeGreaterThanOrEqualTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = e655280587e102be7e767afed5c99c97 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift */; };
+		FEEBA6861D1A7E6900ED24DE /* Expectation+BeGreaterThan_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7a04a8c56bb3e4797b53bb8dd9c01faa /* Expectation+BeGreaterThan_Spec.swift */; };
+		FEEBA6871D1A7E6900ED24DE /* Expectation+BeIdenticalTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519a8b5232638906128d8009b7766eb9 /* Expectation+BeIdenticalTo_Spec.swift */; };
+		FEEBA6881D1A7E6900ED24DE /* Expectation+BeKindOf_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ad19f394fb83215f11aa3447a898b327 /* Expectation+BeKindOf_Spec.swift */; };
+		FEEBA6891D1A7E6900ED24DE /* Expectation+BeLessThanOrEqualTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = fed07e4b172e08eee35602a3c2f06c93 /* Expectation+BeLessThanOrEqualTo_Spec.swift */; };
+		FEEBA68A1D1A7E6900ED24DE /* Expectation+BeLessThan_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9a124a22783e58893cc15d10d20e2a6b /* Expectation+BeLessThan_Spec.swift */; };
+		FEEBA68B1D1A7E6900ED24DE /* Expectation+BeNil_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212e116733f95d8d7cadbdf95bbda26a /* Expectation+BeNil_Spec.swift */; };
+		FEEBA68C1D1A7E6900ED24DE /* Expectation+BeTrue_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42905a4067f1a14b13f61d22e662e022 /* Expectation+BeTrue_Spec.swift */; };
+		FEEBA68D1D1A7E6900ED24DE /* Expectation+ConformTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110bdc95328bd0cd87a33cdcf75fdca7 /* Expectation+ConformTo_Spec.swift */; };
+		FEEBA68E1D1A7E6900ED24DE /* Expectation+Contain_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98f095dc629a028bf4076ae2447d317d /* Expectation+Contain_Spec.swift */; };
+		FEEBA68F1D1A7E6900ED24DE /* Expectation+Equal_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = cce8f381ef3294c493cf3bf27e1624fa /* Expectation+Equal_Spec.swift */; };
+		FEEBA6901D1A7E6900ED24DE /* Expectation+HaveCountOf_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = b677404f3c35a684671614001ca41701 /* Expectation+HaveCountOf_Spec.swift */; };
+		FEEBA6911D1A7E6900ED24DE /* Expectation+HavePrefix_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991d46259d24d33df8e5b01ad2d4dd9e /* Expectation+HavePrefix_Spec.swift */; };
+		FEEBA6921D1A7E6900ED24DE /* Expectation+HaveSuffix_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = c98482ef87d319bb2ea5cf92c52eda06 /* Expectation+HaveSuffix_Spec.swift */; };
+		FEEBA6931D1A7E6900ED24DE /* Expectation+RespondTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14be927eac9a271517ab819bd54aa52c /* Expectation+RespondTo_Spec.swift */; };
+		FEEBA6941D1A7E6900ED24DE /* Expectation_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = eb18f0e1b4be6f3672458acc8813d9c3 /* Expectation_Spec.swift */; };
+		FEEBA6951D1A7E6900ED24DE /* XCTestCaseAssertionSubstitutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214544330fb3da68b291453215e73f81 /* XCTestCaseAssertionSubstitutes.swift */; };
+		FEEBA6961D1A7E6A00ED24DE /* Expectation+BeCloseTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303a9e8823d0060fc70c9f3caaee79a /* Expectation+BeCloseTo_Spec.swift */; };
+		FEEBA6971D1A7E6A00ED24DE /* Expectation+BeDynamicType_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4dd49d2f705191ccc85a46ac5936affc /* Expectation+BeDynamicType_Spec.swift */; };
+		FEEBA6981D1A7E6A00ED24DE /* Expectation+BeEmpty_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ca0ffbb8a032c51d4dc6d23e3ca91ab9 /* Expectation+BeEmpty_Spec.swift */; };
+		FEEBA6991D1A7E6A00ED24DE /* Expectation+BeFalse_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = bfc6f9ce128873514405feb56b3e44a8 /* Expectation+BeFalse_Spec.swift */; };
+		FEEBA69A1D1A7E6A00ED24DE /* Expectation+BeGreaterThanOrEqualTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = e655280587e102be7e767afed5c99c97 /* Expectation+BeGreaterThanOrEqualTo_Spec.swift */; };
+		FEEBA69B1D1A7E6A00ED24DE /* Expectation+BeGreaterThan_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7a04a8c56bb3e4797b53bb8dd9c01faa /* Expectation+BeGreaterThan_Spec.swift */; };
+		FEEBA69C1D1A7E6A00ED24DE /* Expectation+BeIdenticalTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519a8b5232638906128d8009b7766eb9 /* Expectation+BeIdenticalTo_Spec.swift */; };
+		FEEBA69D1D1A7E6A00ED24DE /* Expectation+BeKindOf_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ad19f394fb83215f11aa3447a898b327 /* Expectation+BeKindOf_Spec.swift */; };
+		FEEBA69E1D1A7E6A00ED24DE /* Expectation+BeLessThanOrEqualTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = fed07e4b172e08eee35602a3c2f06c93 /* Expectation+BeLessThanOrEqualTo_Spec.swift */; };
+		FEEBA69F1D1A7E6A00ED24DE /* Expectation+BeLessThan_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9a124a22783e58893cc15d10d20e2a6b /* Expectation+BeLessThan_Spec.swift */; };
+		FEEBA6A01D1A7E6A00ED24DE /* Expectation+BeNil_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212e116733f95d8d7cadbdf95bbda26a /* Expectation+BeNil_Spec.swift */; };
+		FEEBA6A11D1A7E6A00ED24DE /* Expectation+BeTrue_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42905a4067f1a14b13f61d22e662e022 /* Expectation+BeTrue_Spec.swift */; };
+		FEEBA6A21D1A7E6A00ED24DE /* Expectation+ConformTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110bdc95328bd0cd87a33cdcf75fdca7 /* Expectation+ConformTo_Spec.swift */; };
+		FEEBA6A31D1A7E6A00ED24DE /* Expectation+Contain_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98f095dc629a028bf4076ae2447d317d /* Expectation+Contain_Spec.swift */; };
+		FEEBA6A41D1A7E6A00ED24DE /* Expectation+Equal_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = cce8f381ef3294c493cf3bf27e1624fa /* Expectation+Equal_Spec.swift */; };
+		FEEBA6A51D1A7E6A00ED24DE /* Expectation+HaveCountOf_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = b677404f3c35a684671614001ca41701 /* Expectation+HaveCountOf_Spec.swift */; };
+		FEEBA6A61D1A7E6A00ED24DE /* Expectation+HavePrefix_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991d46259d24d33df8e5b01ad2d4dd9e /* Expectation+HavePrefix_Spec.swift */; };
+		FEEBA6A71D1A7E6A00ED24DE /* Expectation+HaveSuffix_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = c98482ef87d319bb2ea5cf92c52eda06 /* Expectation+HaveSuffix_Spec.swift */; };
+		FEEBA6A81D1A7E6A00ED24DE /* Expectation+RespondTo_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14be927eac9a271517ab819bd54aa52c /* Expectation+RespondTo_Spec.swift */; };
+		FEEBA6A91D1A7E6A00ED24DE /* Expectation_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = eb18f0e1b4be6f3672458acc8813d9c3 /* Expectation_Spec.swift */; };
+		FEEBA6AA1D1A7E6A00ED24DE /* XCTestCaseAssertionSubstitutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214544330fb3da68b291453215e73f81 /* XCTestCaseAssertionSubstitutes.swift */; };
+		FEEBA6AB1D1A83E400ED24DE /* Expectation+BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ea079f0b1364832331981bc969b850 /* Expectation+BeCloseTo.swift */; };
+		FEEBA6AC1D1A83E400ED24DE /* Expectation+BeDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3a18ee94823893a673de7857438dce25 /* Expectation+BeDynamicType.swift */; };
+		FEEBA6AD1D1A83E400ED24DE /* Expectation+BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = cceedcaebdcc1326f9c749b355a2d815 /* Expectation+BeEmpty.swift */; };
+		FEEBA6AE1D1A83E400ED24DE /* Expectation+BeFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69218df22665a46088917fe47042b8ec /* Expectation+BeFalse.swift */; };
+		FEEBA6AF1D1A83E400ED24DE /* Expectation+BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77dee871ba91a2a1f822f2ee69c810c8 /* Expectation+BeGreaterThan.swift */; };
+		FEEBA6B01D1A83E400ED24DE /* Expectation+BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = e2074224369b93f4b09a5ccde4655dd3 /* Expectation+BeGreaterThanOrEqualTo.swift */; };
+		FEEBA6B11D1A83E400ED24DE /* Expectation+BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = bffdc35bf9f73c3427e3847e2cf5bcb2 /* Expectation+BeIdenticalTo.swift */; };
+		FEEBA6B21D1A83E400ED24DE /* Expectation+BeKindOfClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = b1c313c2de0d6e8b942fac9d099ee05a /* Expectation+BeKindOfClass.swift */; };
+		FEEBA6B31D1A83E400ED24DE /* Expectation+BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ebd0d6076de32c7d1ab7993f5d798e3 /* Expectation+BeLessThan.swift */; };
+		FEEBA6B41D1A83E400ED24DE /* Expectation+BeLessThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = cefcfba9dee2a4a444ca759c61af22a8 /* Expectation+BeLessThanOrEqualTo.swift */; };
+		FEEBA6B51D1A83E400ED24DE /* Expectation+BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ef8572e3db58cb7bd54c3dc90ce63c0b /* Expectation+BeNil.swift */; };
+		FEEBA6B61D1A83E400ED24DE /* Expectation+BeTrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3a7c6cdc1783bdfca8574880b31c21c7 /* Expectation+BeTrue.swift */; };
+		FEEBA6B71D1A83E400ED24DE /* Expectation+ConformTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870954e9344ac9c9f487a743b4faa2bf /* Expectation+ConformTo.swift */; };
+		FEEBA6B81D1A83E400ED24DE /* Expectation+Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124d0c5b5b76ca0bd84e8d84b5b5c188 /* Expectation+Contain.swift */; };
+		FEEBA6B91D1A83E400ED24DE /* Expectation+Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18a77d26ef994acb8e1a16971d26200f /* Expectation+Equal.swift */; };
+		FEEBA6BA1D1A83E400ED24DE /* Expectation+HaveCountOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01fb5aba5cfb0b7b1a9ee68dd177d214 /* Expectation+HaveCountOf.swift */; };
+		FEEBA6BB1D1A83E400ED24DE /* Expectation+HavePrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ec1f20a4824d161c117ba915b0074f /* Expectation+HavePrefix.swift */; };
+		FEEBA6BC1D1A83E400ED24DE /* Expectation+HaveSuffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = ccd84ffd98c7bce271e4a3292a87f1cd /* Expectation+HaveSuffix.swift */; };
+		FEEBA6BD1D1A83E400ED24DE /* Expectation+RespondTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4b8692e7e08e3a51aaebbcb54cb3598f /* Expectation+RespondTo.swift */; };
+		FEEBA6BE1D1A83E400ED24DE /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = c829173d074dc4a058be75d5e23e88dd /* Expectation.swift */; };
 		a55842c611b631422d8a3d6b177921b7 /* Expectation+BeNil_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212e116733f95d8d7cadbdf95bbda26a /* Expectation+BeNil_Spec.swift */; };
 		a6874954b342e25e4e35ce8fcf27745c /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = c829173d074dc4a058be75d5e23e88dd /* Expectation.swift */; };
 		a706043ba96b0f20a8d05a4e0bce2f15 /* Expectation+Equal_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = cce8f381ef3294c493cf3bf27e1624fa /* Expectation+Equal_Spec.swift */; };
@@ -53,6 +138,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FEEBA6531D19F1F500ED24DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03d740d06093820601a9e571e9786df8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE4D5EE51D19EF09009ABCD6;
+			remoteInfo = macOS;
+		};
+		FEEBA67C1D1A7E1200ED24DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03d740d06093820601a9e571e9786df8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEEBA6691D1A7DED00ED24DE;
+			remoteInfo = tvOS;
+		};
 		d7e67ce8876c50cc10abf14de21f1621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 03d740d06093820601a9e571e9786df8 /* Project object */;
@@ -90,8 +189,12 @@
 		98f095dc629a028bf4076ae2447d317d /* Expectation+Contain_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+Contain_Spec.swift"; sourceTree = "<group>"; };
 		991d46259d24d33df8e5b01ad2d4dd9e /* Expectation+HavePrefix_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+HavePrefix_Spec.swift"; sourceTree = "<group>"; };
 		9a124a22783e58893cc15d10d20e2a6b /* Expectation+BeLessThan_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeLessThan_Spec.swift"; sourceTree = "<group>"; };
+		FE4D5EE61D19EF09009ABCD6 /* Expectation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expectation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEBA64D1D19F1F500ED24DE /* macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEBA66A1D1A7DED00ED24DE /* Expectation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expectation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEBA6761D1A7E1200ED24DE /* tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ad19f394fb83215f11aa3447a898b327 /* Expectation+BeKindOf_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeKindOf_Spec.swift"; sourceTree = "<group>"; };
-		b09f23a5cb8eed49362dc04e4f0b22d9 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		b09f23a5cb8eed49362dc04e4f0b22d9 /* iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		b1c313c2de0d6e8b942fac9d099ee05a /* Expectation+BeKindOfClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Expectation+BeKindOfClass.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		b677404f3c35a684671614001ca41701 /* Expectation+HaveCountOf_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+HaveCountOf_Spec.swift"; sourceTree = "<group>"; };
 		bfc6f9ce128873514405feb56b3e44a8 /* Expectation+BeFalse_Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+BeFalse_Spec.swift"; sourceTree = "<group>"; };
@@ -120,6 +223,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE4D5EE21D19EF09009ABCD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA64A1D19F1F500ED24DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBA6521D19F1F500ED24DE /* Expectation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA6661D1A7DED00ED24DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA6731D1A7E1200ED24DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBA67B1D1A7E1200ED24DE /* Expectation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		a497c6475e3f9eb7e2ac362d70dad2b5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +277,11 @@
 			isa = PBXGroup;
 			children = (
 				c1c685f0d4a5f36b004544fb1ed2cac3 /* Expectation.framework */,
-				b09f23a5cb8eed49362dc04e4f0b22d9 /* Tests.xctest */,
+				b09f23a5cb8eed49362dc04e4f0b22d9 /* iOS Tests.xctest */,
+				FE4D5EE61D19EF09009ABCD6 /* Expectation.framework */,
+				FEEBA64D1D19F1F500ED24DE /* macOS Tests.xctest */,
+				FEEBA66A1D1A7DED00ED24DE /* Expectation.framework */,
+				FEEBA6761D1A7E1200ED24DE /* tvOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +378,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		FE4D5EE31D19EF09009ABCD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4D5F031D19EF5C009ABCD6 /* Expectation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA6671D1A7DED00ED24DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ca2ed4b045e6e7dfa27204ddfc536ddf /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,9 +404,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3c1df4d2e274cd15ab6419c07bbcf063 /* Expectation */ = {
+		3c1df4d2e274cd15ab6419c07bbcf063 /* iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29787db6031e3c5e564d448f7195bec3 /* Build configuration list for PBXNativeTarget "Expectation" */;
+			buildConfigurationList = 29787db6031e3c5e564d448f7195bec3 /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
 				adfaaa9a30dffb21b917506c63f52f35 /* ShellScript */,
 				5c07d4f5041fb3176f435d78514141d6 /* Sources */,
@@ -266,14 +418,14 @@
 			);
 			dependencies = (
 			);
-			name = Expectation;
+			name = iOS;
 			productName = Expectation;
 			productReference = c1c685f0d4a5f36b004544fb1ed2cac3 /* Expectation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6eed5d8e065047e41b774284f3d43e33 /* Tests */ = {
+		6eed5d8e065047e41b774284f3d43e33 /* iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 701ffd7d27bbc1bc1f9f663a46ddbda3 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 701ffd7d27bbc1bc1f9f663a46ddbda3 /* Build configuration list for PBXNativeTarget "iOS Tests" */;
 			buildPhases = (
 				f8ff82ce4393f0c74ad73350eac4dbde /* Sources */,
 				097f14db0caecf508aaa22f9b6f55304 /* Frameworks */,
@@ -284,9 +436,82 @@
 			dependencies = (
 				c39a59db7e97ced6dbd1d2d1f93c5a56 /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = "iOS Tests";
 			productName = Tests;
-			productReference = b09f23a5cb8eed49362dc04e4f0b22d9 /* Tests.xctest */;
+			productReference = b09f23a5cb8eed49362dc04e4f0b22d9 /* iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE4D5EE51D19EF09009ABCD6 /* macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE4D5EEB1D19EF09009ABCD6 /* Build configuration list for PBXNativeTarget "macOS" */;
+			buildPhases = (
+				FE4D5EEE1D19EF3D009ABCD6 /* ShellScript */,
+				FE4D5EE11D19EF09009ABCD6 /* Sources */,
+				FE4D5EE21D19EF09009ABCD6 /* Frameworks */,
+				FE4D5EE31D19EF09009ABCD6 /* Headers */,
+				FE4D5EE41D19EF09009ABCD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macOS;
+			productName = macOS;
+			productReference = FE4D5EE61D19EF09009ABCD6 /* Expectation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FEEBA64C1D19F1F500ED24DE /* macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEBA6551D19F1F500ED24DE /* Build configuration list for PBXNativeTarget "macOS Tests" */;
+			buildPhases = (
+				FEEBA6491D19F1F500ED24DE /* Sources */,
+				FEEBA64A1D19F1F500ED24DE /* Frameworks */,
+				FEEBA64B1D19F1F500ED24DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEEBA6541D19F1F500ED24DE /* PBXTargetDependency */,
+			);
+			name = "macOS Tests";
+			productName = "macOS Tests";
+			productReference = FEEBA64D1D19F1F500ED24DE /* macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEEBA6691D1A7DED00ED24DE /* tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEBA66F1D1A7DED00ED24DE /* Build configuration list for PBXNativeTarget "tvOS" */;
+			buildPhases = (
+				FEEBA6651D1A7DED00ED24DE /* Sources */,
+				FEEBA6661D1A7DED00ED24DE /* Frameworks */,
+				FEEBA6671D1A7DED00ED24DE /* Headers */,
+				FEEBA6681D1A7DED00ED24DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOS;
+			productName = tvOS;
+			productReference = FEEBA66A1D1A7DED00ED24DE /* Expectation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FEEBA6751D1A7E1200ED24DE /* tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEBA67E1D1A7E1200ED24DE /* Build configuration list for PBXNativeTarget "tvOS Tests" */;
+			buildPhases = (
+				FEEBA6721D1A7E1200ED24DE /* Sources */,
+				FEEBA6731D1A7E1200ED24DE /* Frameworks */,
+				FEEBA6741D1A7E1200ED24DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEEBA67D1D1A7E1200ED24DE /* PBXTargetDependency */,
+			);
+			name = "tvOS Tests";
+			productName = "tvOS Tests";
+			productReference = FEEBA6761D1A7E1200ED24DE /* tvOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +520,7 @@
 		03d740d06093820601a9e571e9786df8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Oliver;
 				TargetAttributes = {
@@ -304,6 +529,18 @@
 					};
 					6eed5d8e065047e41b774284f3d43e33 = {
 						CreatedOnToolsVersion = 7.2.1;
+					};
+					FE4D5EE51D19EF09009ABCD6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FEEBA64C1D19F1F500ED24DE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FEEBA6691D1A7DED00ED24DE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FEEBA6751D1A7E1200ED24DE = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -320,14 +557,46 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3c1df4d2e274cd15ab6419c07bbcf063 /* Expectation */,
-				6eed5d8e065047e41b774284f3d43e33 /* Tests */,
+				3c1df4d2e274cd15ab6419c07bbcf063 /* iOS */,
+				FE4D5EE51D19EF09009ABCD6 /* macOS */,
+				FEEBA6691D1A7DED00ED24DE /* tvOS */,
+				6eed5d8e065047e41b774284f3d43e33 /* iOS Tests */,
+				FEEBA64C1D19F1F500ED24DE /* macOS Tests */,
+				FEEBA6751D1A7E1200ED24DE /* tvOS Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1ba85be7d258aa47b05c4583d8dfb599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4D5EE41D19EF09009ABCD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA64B1D19F1F500ED24DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA6681D1A7DED00ED24DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA6741D1A7E1200ED24DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,6 +613,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		FE4D5EEE1D19EF3D009ABCD6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		adfaaa9a30dffb21b917506c63f52f35 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,6 +669,116 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE4D5EE11D19EF09009ABCD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4D5EEF1D19EF55009ABCD6 /* Expectation+BeCloseTo.swift in Sources */,
+				FE4D5EF01D19EF55009ABCD6 /* Expectation+BeDynamicType.swift in Sources */,
+				FE4D5EF11D19EF55009ABCD6 /* Expectation+BeEmpty.swift in Sources */,
+				FE4D5EF21D19EF55009ABCD6 /* Expectation+BeFalse.swift in Sources */,
+				FE4D5EF31D19EF55009ABCD6 /* Expectation+BeGreaterThan.swift in Sources */,
+				FE4D5EF41D19EF55009ABCD6 /* Expectation+BeGreaterThanOrEqualTo.swift in Sources */,
+				FE4D5EF51D19EF55009ABCD6 /* Expectation+BeIdenticalTo.swift in Sources */,
+				FE4D5EF61D19EF55009ABCD6 /* Expectation+BeKindOfClass.swift in Sources */,
+				FE4D5EF71D19EF55009ABCD6 /* Expectation+BeLessThan.swift in Sources */,
+				FE4D5EF81D19EF55009ABCD6 /* Expectation+BeLessThanOrEqualTo.swift in Sources */,
+				FE4D5EF91D19EF55009ABCD6 /* Expectation+BeNil.swift in Sources */,
+				FE4D5EFA1D19EF55009ABCD6 /* Expectation+BeTrue.swift in Sources */,
+				FE4D5EFB1D19EF55009ABCD6 /* Expectation+ConformTo.swift in Sources */,
+				FE4D5EFC1D19EF55009ABCD6 /* Expectation+Contain.swift in Sources */,
+				FE4D5EFD1D19EF55009ABCD6 /* Expectation+Equal.swift in Sources */,
+				FE4D5EFE1D19EF55009ABCD6 /* Expectation+HaveCountOf.swift in Sources */,
+				FE4D5EFF1D19EF55009ABCD6 /* Expectation+HavePrefix.swift in Sources */,
+				FE4D5F001D19EF55009ABCD6 /* Expectation+HaveSuffix.swift in Sources */,
+				FE4D5F011D19EF55009ABCD6 /* Expectation+RespondTo.swift in Sources */,
+				FE4D5F021D19EF55009ABCD6 /* Expectation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA6491D19F1F500ED24DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBA6861D1A7E6900ED24DE /* Expectation+BeGreaterThan_Spec.swift in Sources */,
+				FEEBA6851D1A7E6900ED24DE /* Expectation+BeGreaterThanOrEqualTo_Spec.swift in Sources */,
+				FEEBA6931D1A7E6900ED24DE /* Expectation+RespondTo_Spec.swift in Sources */,
+				FEEBA68A1D1A7E6900ED24DE /* Expectation+BeLessThan_Spec.swift in Sources */,
+				FEEBA68F1D1A7E6900ED24DE /* Expectation+Equal_Spec.swift in Sources */,
+				FEEBA6841D1A7E6900ED24DE /* Expectation+BeFalse_Spec.swift in Sources */,
+				FEEBA68D1D1A7E6900ED24DE /* Expectation+ConformTo_Spec.swift in Sources */,
+				FEEBA6911D1A7E6900ED24DE /* Expectation+HavePrefix_Spec.swift in Sources */,
+				FEEBA6821D1A7E6900ED24DE /* Expectation+BeDynamicType_Spec.swift in Sources */,
+				FEEBA6921D1A7E6900ED24DE /* Expectation+HaveSuffix_Spec.swift in Sources */,
+				FEEBA6811D1A7E6900ED24DE /* Expectation+BeCloseTo_Spec.swift in Sources */,
+				FEEBA6901D1A7E6900ED24DE /* Expectation+HaveCountOf_Spec.swift in Sources */,
+				FEEBA68B1D1A7E6900ED24DE /* Expectation+BeNil_Spec.swift in Sources */,
+				FEEBA6881D1A7E6900ED24DE /* Expectation+BeKindOf_Spec.swift in Sources */,
+				FEEBA68C1D1A7E6900ED24DE /* Expectation+BeTrue_Spec.swift in Sources */,
+				FEEBA6941D1A7E6900ED24DE /* Expectation_Spec.swift in Sources */,
+				FEEBA68E1D1A7E6900ED24DE /* Expectation+Contain_Spec.swift in Sources */,
+				FEEBA6951D1A7E6900ED24DE /* XCTestCaseAssertionSubstitutes.swift in Sources */,
+				FEEBA6891D1A7E6900ED24DE /* Expectation+BeLessThanOrEqualTo_Spec.swift in Sources */,
+				FEEBA6871D1A7E6900ED24DE /* Expectation+BeIdenticalTo_Spec.swift in Sources */,
+				FEEBA6831D1A7E6900ED24DE /* Expectation+BeEmpty_Spec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA6651D1A7DED00ED24DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBA6AB1D1A83E400ED24DE /* Expectation+BeCloseTo.swift in Sources */,
+				FEEBA6B21D1A83E400ED24DE /* Expectation+BeKindOfClass.swift in Sources */,
+				FEEBA6B11D1A83E400ED24DE /* Expectation+BeIdenticalTo.swift in Sources */,
+				FEEBA6AE1D1A83E400ED24DE /* Expectation+BeFalse.swift in Sources */,
+				FEEBA6BE1D1A83E400ED24DE /* Expectation.swift in Sources */,
+				FEEBA6B01D1A83E400ED24DE /* Expectation+BeGreaterThanOrEqualTo.swift in Sources */,
+				FEEBA6B81D1A83E400ED24DE /* Expectation+Contain.swift in Sources */,
+				FEEBA6B51D1A83E400ED24DE /* Expectation+BeNil.swift in Sources */,
+				FEEBA6BC1D1A83E400ED24DE /* Expectation+HaveSuffix.swift in Sources */,
+				FEEBA6AD1D1A83E400ED24DE /* Expectation+BeEmpty.swift in Sources */,
+				FEEBA6B71D1A83E400ED24DE /* Expectation+ConformTo.swift in Sources */,
+				FEEBA6BB1D1A83E400ED24DE /* Expectation+HavePrefix.swift in Sources */,
+				FEEBA6BD1D1A83E400ED24DE /* Expectation+RespondTo.swift in Sources */,
+				FEEBA6BA1D1A83E400ED24DE /* Expectation+HaveCountOf.swift in Sources */,
+				FEEBA6B41D1A83E400ED24DE /* Expectation+BeLessThanOrEqualTo.swift in Sources */,
+				FEEBA6AF1D1A83E400ED24DE /* Expectation+BeGreaterThan.swift in Sources */,
+				FEEBA6B61D1A83E400ED24DE /* Expectation+BeTrue.swift in Sources */,
+				FEEBA6B91D1A83E400ED24DE /* Expectation+Equal.swift in Sources */,
+				FEEBA6AC1D1A83E400ED24DE /* Expectation+BeDynamicType.swift in Sources */,
+				FEEBA6B31D1A83E400ED24DE /* Expectation+BeLessThan.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEBA6721D1A7E1200ED24DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBA6A51D1A7E6A00ED24DE /* Expectation+HaveCountOf_Spec.swift in Sources */,
+				FEEBA6A61D1A7E6A00ED24DE /* Expectation+HavePrefix_Spec.swift in Sources */,
+				FEEBA6981D1A7E6A00ED24DE /* Expectation+BeEmpty_Spec.swift in Sources */,
+				FEEBA69A1D1A7E6A00ED24DE /* Expectation+BeGreaterThanOrEqualTo_Spec.swift in Sources */,
+				FEEBA6A01D1A7E6A00ED24DE /* Expectation+BeNil_Spec.swift in Sources */,
+				FEEBA6971D1A7E6A00ED24DE /* Expectation+BeDynamicType_Spec.swift in Sources */,
+				FEEBA69E1D1A7E6A00ED24DE /* Expectation+BeLessThanOrEqualTo_Spec.swift in Sources */,
+				FEEBA69D1D1A7E6A00ED24DE /* Expectation+BeKindOf_Spec.swift in Sources */,
+				FEEBA6961D1A7E6A00ED24DE /* Expectation+BeCloseTo_Spec.swift in Sources */,
+				FEEBA69B1D1A7E6A00ED24DE /* Expectation+BeGreaterThan_Spec.swift in Sources */,
+				FEEBA6A41D1A7E6A00ED24DE /* Expectation+Equal_Spec.swift in Sources */,
+				FEEBA6AA1D1A7E6A00ED24DE /* XCTestCaseAssertionSubstitutes.swift in Sources */,
+				FEEBA6A11D1A7E6A00ED24DE /* Expectation+BeTrue_Spec.swift in Sources */,
+				FEEBA69F1D1A7E6A00ED24DE /* Expectation+BeLessThan_Spec.swift in Sources */,
+				FEEBA6A71D1A7E6A00ED24DE /* Expectation+HaveSuffix_Spec.swift in Sources */,
+				FEEBA6A21D1A7E6A00ED24DE /* Expectation+ConformTo_Spec.swift in Sources */,
+				FEEBA6A81D1A7E6A00ED24DE /* Expectation+RespondTo_Spec.swift in Sources */,
+				FEEBA6991D1A7E6A00ED24DE /* Expectation+BeFalse_Spec.swift in Sources */,
+				FEEBA6A91D1A7E6A00ED24DE /* Expectation_Spec.swift in Sources */,
+				FEEBA69C1D1A7E6A00ED24DE /* Expectation+BeIdenticalTo_Spec.swift in Sources */,
+				FEEBA6A31D1A7E6A00ED24DE /* Expectation+Contain_Spec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		f8ff82ce4393f0c74ad73350eac4dbde /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,9 +810,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FEEBA6541D19F1F500ED24DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE4D5EE51D19EF09009ABCD6 /* macOS */;
+			targetProxy = FEEBA6531D19F1F500ED24DE /* PBXContainerItemProxy */;
+		};
+		FEEBA67D1D1A7E1200ED24DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEEBA6691D1A7DED00ED24DE /* tvOS */;
+			targetProxy = FEEBA67C1D1A7E1200ED24DE /* PBXContainerItemProxy */;
+		};
 		c39a59db7e97ced6dbd1d2d1f93c5a56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3c1df4d2e274cd15ab6419c07bbcf063 /* Expectation */;
+			target = 3c1df4d2e274cd15ab6419c07bbcf063 /* iOS */;
 			targetProxy = d7e67ce8876c50cc10abf14de21f1621 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -461,6 +863,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -501,7 +904,7 @@
 					XCTest,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.oliveratkinson.Expectation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Expectation;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,6 +935,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -553,6 +957,158 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
+		};
+		FE4D5EEC1D19EF09009ABCD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Expectation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = me.oliveratkinson.macOS;
+				PRODUCT_NAME = Expectation;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE4D5EED1D19EF09009ABCD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Expectation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = me.oliveratkinson.macOS;
+				PRODUCT_NAME = Expectation;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEEBA6561D19F1F500ED24DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.oliveratkinson.macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FEEBA6571D19F1F500ED24DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.oliveratkinson.macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FEEBA6701D1A7DED00ED24DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Expectation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.oliveratkinson.tvOS;
+				PRODUCT_NAME = Expectation;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEEBA6711D1A7DED00ED24DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Expectation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.oliveratkinson.tvOS;
+				PRODUCT_NAME = Expectation;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEEBA67F1D1A7E1200ED24DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.oliveratkinson.tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		FEEBA6801D1A7E1200ED24DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.oliveratkinson.tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
 		};
 		d4c46fe832105ad376b87d363395270e /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -579,7 +1135,7 @@
 					XCTest,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.oliveratkinson.Expectation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Expectation;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -603,7 +1159,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29787db6031e3c5e564d448f7195bec3 /* Build configuration list for PBXNativeTarget "Expectation" */ = {
+		29787db6031e3c5e564d448f7195bec3 /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75c9c4c10206f83d46d712c308a8fff6 /* Debug */,
@@ -621,7 +1177,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		701ffd7d27bbc1bc1f9f663a46ddbda3 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		701ffd7d27bbc1bc1f9f663a46ddbda3 /* Build configuration list for PBXNativeTarget "iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1aed8287fdd5d733b700aefaa5ecacba /* Debug */,
@@ -629,6 +1185,39 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FE4D5EEB1D19EF09009ABCD6 /* Build configuration list for PBXNativeTarget "macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4D5EEC1D19EF09009ABCD6 /* Debug */,
+				FE4D5EED1D19EF09009ABCD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEEBA6551D19F1F500ED24DE /* Build configuration list for PBXNativeTarget "macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEBA6561D19F1F500ED24DE /* Debug */,
+				FEEBA6571D19F1F500ED24DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEEBA66F1D1A7DED00ED24DE /* Build configuration list for PBXNativeTarget "tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEBA6701D1A7DED00ED24DE /* Debug */,
+				FEEBA6711D1A7DED00ED24DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEEBA67E1D1A7E1200ED24DE /* Build configuration list for PBXNativeTarget "tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEBA67F1D1A7E1200ED24DE /* Debug */,
+				FEEBA6801D1A7E1200ED24DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

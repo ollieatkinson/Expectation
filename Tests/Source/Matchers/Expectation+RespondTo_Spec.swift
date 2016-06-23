@@ -24,8 +24,6 @@ class Expectation_RespondTo_Spec: XCTestCase {
   
   func testRespondToPass() {
     
-    #selector(UIView.frameForAlignmentRect(_:))
-    
     assertTrueValidate(True) {
       expect(NSObject()).to.respondTo(#selector(NSObject.doesNotRecognizeSelector(_:)))
     }
@@ -35,7 +33,7 @@ class Expectation_RespondTo_Spec: XCTestCase {
   func testRespondToFail() {
     
     assertTrueValidate(False) {
-      expect(NSObject()).to.respondTo(#selector(UIView.layoutSublayersOfLayer(_:)))
+      expect(NSObject()).to.respondTo(#selector(NSData.encodeWithCoder(_:)))
     }
     
     assertTrueValidate(False) {
