@@ -6,9 +6,9 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-public extension Expectation where T: StringLiteralConvertible {
+public extension Expectation where T: ExpressibleByStringLiteral {
   
-  public func haveSuffix(other: T, _ description: String = "") {
+  public func haveSuffix(_ other: T, _ description: String = "") {
     
     if let expect = expect {
       assertTrue("\(expect)".hasSuffix("\(other)"), self.description(#function, other, description))

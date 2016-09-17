@@ -25,7 +25,7 @@ class Expectation_ConformTo_Spec: XCTestCase {
   func testConformToPass() {
     
     assertTrueValidate(True) {
-      expect(NSObject()).to.conformTo(NSObjectProtocol)
+      expect(NSObject()).to.conformTo(NSObjectProtocol.self)
     }
     
   }
@@ -33,12 +33,12 @@ class Expectation_ConformTo_Spec: XCTestCase {
   func testConformToFail() {
     
     assertTrueValidate(False) {
-      expect(NSObject()).to.conformTo(NSFastEnumeration)
+      expect(NSObject()).to.conformTo(NSFastEnumeration.self)
     }
     
     assertTrueValidate(False) {
       let object: NSObject? = nil
-      expect(object).to.conformTo(NSObjectProtocol)
+      expect(object).to.conformTo(NSObjectProtocol.self)
     }
     
   }

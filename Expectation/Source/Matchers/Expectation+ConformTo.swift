@@ -10,8 +10,8 @@ import Foundation
 
 public extension Expectation where T: NSObjectProtocol {
 
-  public func conformTo(aProtocol: Protocol, _ description: String = "") {
-    assertTrue(expect?.conformsToProtocol(aProtocol) ?? false, self.description(#function, aProtocol, description))
+  public func conformTo(_ aProtocol: Protocol, _ description: String = "") {
+    assertTrue(expect?.conforms(to: aProtocol) ?? false, self.description(#function, aProtocol, description))
   }
   
 }

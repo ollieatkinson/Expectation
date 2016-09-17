@@ -8,8 +8,8 @@
 
 public extension Expectation where T: Comparable {
 
-  public func beLessThanOrEqualTo(other: T, _ description: String = "") {
-    assertTrue(expect <= other, self.description(#function, other, description))
+  public func beLessThanOrEqualTo(_ other: T, _ description: String = "") {
+    assertTrue(expect! <= other, self.description(#function, other, description))
   }
   
 }

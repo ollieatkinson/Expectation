@@ -33,7 +33,7 @@ class Expectation_RespondTo_Spec: XCTestCase {
   func testRespondToFail() {
     
     assertTrueValidate(False) {
-      expect(NSObject()).to.respondTo(#selector(NSData.encodeWithCoder(_:)))
+      expect(NSObject()).to.respondTo(#selector(NSData.base64EncodedData(options:)))
     }
     
     assertTrueValidate(False) {

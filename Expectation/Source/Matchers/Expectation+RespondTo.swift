@@ -10,8 +10,8 @@ import Foundation
 
 public extension Expectation where T: NSObjectProtocol {
   
-  public func respondTo(selector: Selector, _ description: String = "") {
-    assertTrue(expect?.respondsToSelector(selector) ?? false, self.description(#function, selector, description))
+  public func respondTo(_ selector: Selector, _ description: String = "") {
+    assertTrue(expect?.responds(to: selector) ?? false, self.description(#function, selector, description))
   }
   
 }
