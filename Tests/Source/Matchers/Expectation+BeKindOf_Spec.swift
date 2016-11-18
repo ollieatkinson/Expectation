@@ -45,12 +45,12 @@ class Expectation_BeKindOf_Spec: XCTestCase {
   func testBeKindOfFail() {
     
     assertTrueValidate(False) {
-      expect(NSObject()).to.beKindOf(NSFileManager.self)
+      expect(NSObject()).to.beKindOf(FileManager.self)
     }
     
     assertTrueValidate(False) {
       let value: NSObject? = nil
-      expect(value).to.beKindOf(NSFileManager.self)
+      expect(value).to.beKindOf(FileManager.self)
     }
     
     assertTrueValidate(False) {

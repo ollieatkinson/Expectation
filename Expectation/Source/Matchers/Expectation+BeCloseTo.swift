@@ -38,7 +38,7 @@ extension CGFloat: DoubleConvertible {
 
 public extension Expectation where T: DoubleConvertible {
   
-  public func beCloseTo(other: T, within: T, description: String = "") {
+  public func beCloseTo(_ other: T, within: T, description: String = "") {
     
     guard let expect = expect else {
       fail(self.description(#function, other, description))

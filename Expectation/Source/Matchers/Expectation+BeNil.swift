@@ -8,7 +8,7 @@
 
 public extension Expectation {
   
-  public func beNil(description: String = "") {
+  public func beNil(_ description: String = "") {
     assertNil(expect, self.description(#function, description))
   }
   

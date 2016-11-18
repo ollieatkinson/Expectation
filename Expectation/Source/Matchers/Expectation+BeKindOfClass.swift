@@ -10,7 +10,7 @@ import Foundation
 
 public extension Expectation {
   
-  func beKindOf<T>(klass: T.Type, _ description: String = "") {
+  func beKindOf<T>(_ klass: T.Type, _ description: String = "") {
     assertTrue(expect is T, self.description(#function, klass, description))
   }
   

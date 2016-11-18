@@ -6,9 +6,9 @@
 //  Copyright © 2016 Oliver. All rights reserved.
 //
 
-public extension Expectation where T: CollectionType {
+public extension Expectation where T: Collection {
   
-  public func beEmpty(description: String = "") {
+  public func beEmpty(_ description: String = "") {
     assertTrue(expect?.isEmpty ?? false, self.description(#function, description))
   }
   

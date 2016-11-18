@@ -8,15 +8,15 @@
 
 import XCTest
 
-public func expect<T>(value: T?, file: StaticString = #file, line: UInt = #line) -> Expectation<T> {
+public func expect<T>(_ value: T?, file: StaticString = #file, line: UInt = #line) -> Expectation<T> {
   return Expectation(value, file: file, line: line)
 }
 
-public func fail(reason: String = "", file: StaticString = #file, line: UInt = #line) {
-  ExpectationAssertFunctions.fail(reason, file: file, line: line)
+public func fail(_ reason: String = "", file: StaticString = #file, line: UInt = #line) {
+  ExpectationAssertFunctions.fail(reason, file, line)
 }
 
-public class Expectation<T> {
+open class Expectation<T> {
   
   let expect: T?
   var description: String
@@ -34,12 +34,12 @@ public class Expectation<T> {
     description = "expect(\(expect == nil ? "nil" : "\(expect!)"))"
   }
   
-  public var to: Expectation {
+  open var to: Expectation {
     description += ".to"
     return self
   }
   
-  public var toNot: Expectation {
+  open var toNot: Expectation {
     
     description += ".toNot"
     invert       = !invert
@@ -47,7 +47,7 @@ public class Expectation<T> {
     return self
   }
   
-  public var notTo: Expectation {
+  open var notTo: Expectation {
     
     description += ".notTo"
     invert       = !invert
@@ -55,37 +55,37 @@ public class Expectation<T> {
     return self
   }
   
-  func description<T>(function: String, _ other: T?, _ description: String = "") -> String {
+  func description<T>(_ function: String, _ other: T?, _ description: String = "") -> String {
     return self.description + ".\(function)(\((other == nil ? "nil" : "\(other!)")))\(description.isEmpty ? "" : " - \(description)")"
   }
   
-  func description(function: String, _ description: String = "") -> String {
+  func description(_ function: String, _ description: String = "") -> String {
     return self.description + ".\(function)\(description.isEmpty ? "" : " - \(description)")"
   }
   
-  func assertTrue(expression: BooleanType, _ message: String) {
-    (invert ? ExpectationAssertFunctions.assertFalse : ExpectationAssertFunctions.assertTrue)(expression, message, file: file, line: line)
+  func assertTrue(_ expression: Bool, _ message: String) {
+    (invert ? ExpectationAssertFunctions.assertFalse : ExpectationAssertFunctions.assertTrue)(expression, message, file, line)
   }
   
-  func assertFalse(expression: BooleanType, _ message: String) {
-    (invert ? ExpectationAssertFunctions.assertTrue : ExpectationAssertFunctions.assertFalse)(expression, message, file: file, line: line)
+  func assertFalse(_ expression: Bool, _ message: String) {
+    (invert ? ExpectationAssertFunctions.assertTrue : ExpectationAssertFunctions.assertFalse)(expression, message, file, line)
   }
   
-  func assertNil(expression: Any?, _ message: String) {
-    (invert ? ExpectationAssertFunctions.assertNotNil : ExpectationAssertFunctions.assertNil)(expression, message, file: file, line: line)
+  func assertNil(_ expression: Any?, _ message: String) {
+    (invert ? ExpectationAssertFunctions.assertNotNil : ExpectationAssertFunctions.assertNil)(expression, message, file, line)
   }
   
-  func assertNotNil(expression: Any?, _ message: String) {
-    (invert ? ExpectationAssertFunctions.assertNil : ExpectationAssertFunctions.assertNotNil)(expression, message, file: file, line: line)
+  func assertNotNil(_ expression: Any?, _ message: String) {
+    (invert ? ExpectationAssertFunctions.assertNil : ExpectationAssertFunctions.assertNotNil)(expression, message, file, line)
   }
   
-  func fail(message: String) {
-    ExpectationAssertFunctions.fail(message, file: file, line: line)
+  func fail(_ message: String) {
+    ExpectationAssertFunctions.fail(message, file, line)
   }
   
 }
 
-public class ExpectationAssertFunctions {
+open class ExpectationAssertFunctions {
   
   static var assertTrue   = ExpectationAssertFunctions.ExpectationAssertTrue
   static var assertFalse  = ExpectationAssertFunctions.ExpectationAssertFalse
@@ -93,23 +93,23 @@ public class ExpectationAssertFunctions {
   static var assertNotNil = ExpectationAssertFunctions.ExpectationAssertNotNil
   static var fail         = ExpectationAssertFunctions.ExpectationFail
   
-  public static func ExpectationAssertTrue(expression: BooleanType, _ message: String, file: StaticString, line: UInt) -> Void {
+  open static func ExpectationAssertTrue(_ expression: Bool, _ message: String, file: StaticString, line: UInt) -> Void {
     XCTAssertTrue(expression, message, file: file, line: line)
   }
   
-  public static func ExpectationAssertFalse(expression: BooleanType, _ message: String, file: StaticString, line: UInt) -> Void {
+  open static func ExpectationAssertFalse(_ expression: Bool, _ message: String, file: StaticString, line: UInt) -> Void {
     XCTAssertFalse(expression, message, file: file, line: line)
   }
   
-  public static func ExpectationAssertNil(expression: Any?, _ message: String, file: StaticString, line: UInt) -> Void {
+  open static func ExpectationAssertNil(_ expression: Any?, _ message: String, file: StaticString, line: UInt) -> Void {
     XCTAssertNil(expression, message, file: file, line: line)
   }
   
-  public static func ExpectationAssertNotNil(expression: Any?, _ message: String, file: StaticString, line: UInt) -> Void {
+  open static func ExpectationAssertNotNil(_ expression: Any?, _ message: String, file: StaticString, line: UInt) -> Void {
     XCTAssertNotNil(expression, message, file: file, line: line)
   }
   
-  public static func ExpectationFail(message: String, file: StaticString, line: UInt) -> Void {
+  open static func ExpectationFail(_ message: String, file: StaticString, line: UInt) -> Void {
     XCTFail(message, file: file, line: line)
   }
   

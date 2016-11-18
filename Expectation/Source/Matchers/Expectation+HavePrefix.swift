@@ -6,9 +6,9 @@
 //  Copyright © 2015 Oliver. All rights reserved.
 //
 
-public extension Expectation where T: StringLiteralConvertible {
+public extension Expectation where T: ExpressibleByStringLiteral {
   
-  public func havePrefix(other: T, _ description: String = "") {
+  public func havePrefix(_ other: T, _ description: String = "") {
     
     if let expect = expect {
       assertTrue("\(expect)".hasPrefix("\(other)"), self.description(#function, other, description))

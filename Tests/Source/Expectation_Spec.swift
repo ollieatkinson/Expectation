@@ -33,14 +33,14 @@ class Expectation_Spec: XCTestCase {
   
   func testFailure() {
     
-    let failExpectation = expectationWithDescription("should call fail")
+    let failExpectation = expectation(description: "should call fail")
     ExpectationAssertFunctions.fail = { message, file, line in
       failExpectation.fulfill()
     }
     
     fail()
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
@@ -54,15 +54,15 @@ class Expectation_Spec: XCTestCase {
     
     let expectation = expect(5)
     
-    let assertTrue = expectationWithDescription("assertTrue is called")
+    let assertTrue = self.expectation(description: "assertTrue is called")
     ExpectationAssertFunctions.assertTrue = { expression, message, file, line in
       assertTrue.fulfill()
     }
     
-    expectation.to
+    _ = expectation.to
     expectation.assertTrue(true, "")
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
@@ -72,15 +72,15 @@ class Expectation_Spec: XCTestCase {
     
     let expectation = expect(5)
     
-    let assertFalse = expectationWithDescription("assertFalse is called")
+    let assertFalse = self.expectation(description: "assertFalse is called")
     ExpectationAssertFunctions.assertFalse = { expression, message, file, line in
       assertFalse.fulfill()
     }
     
-    expectation.toNot
+    _ = expectation.toNot
     expectation.assertTrue(true, "")
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
@@ -90,15 +90,15 @@ class Expectation_Spec: XCTestCase {
     
     let expectation = expect(5)
     
-    let assertFalse = expectationWithDescription("assertFalse is called")
+    let assertFalse = self.expectation(description: "assertFalse is called")
     ExpectationAssertFunctions.assertFalse = { expression, message, file, line in
       assertFalse.fulfill()
     }
     
-    expectation.to
+    _ = expectation.to
     expectation.assertFalse(true, "message")
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
@@ -108,15 +108,15 @@ class Expectation_Spec: XCTestCase {
     
     let expectation = expect(5)
     
-    let assertTrue = expectationWithDescription("assertTrue is called")
+    let assertTrue = self.expectation(description: "assertTrue is called")
     ExpectationAssertFunctions.assertTrue = { expression, message, file, line in
       assertTrue.fulfill()
     }
     
-    expectation.toNot
+    _ = expectation.toNot
     expectation.assertFalse(true, "")
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
@@ -127,17 +127,17 @@ class Expectation_Spec: XCTestCase {
     let expectation = expect(5)
     
     
-    let assertNil = expectationWithDescription("assertNil is called")
+    let assertNil = self.expectation(description: "assertNil is called")
     ExpectationAssertFunctions.assertNil = { expression, message, file, line in
       assertNil.fulfill()
     }
     
     let a: A? = A()
     
-    expectation.to
+    _ = expectation.to
     expectation.assertNil(a, "")
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
@@ -147,17 +147,17 @@ class Expectation_Spec: XCTestCase {
     
     let expectation = expect(5)
     
-    let assertNotNil = expectationWithDescription("assertNotNil is called")
+    let assertNotNil = self.expectation(description: "assertNotNil is called")
     ExpectationAssertFunctions.assertNotNil = { expression, message, file, line in
       assertNotNil.fulfill()
     }
     
     let a: A? = A()
     
-    expectation.toNot
+    _ = expectation.toNot
     expectation.assertNil(a, "")
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
@@ -167,17 +167,17 @@ class Expectation_Spec: XCTestCase {
     
     let expectation = expect(5)
     
-    let assertNotNil = expectationWithDescription("assertNotNil is called")
+    let assertNotNil = self.expectation(description: "assertNotNil is called")
     ExpectationAssertFunctions.assertNotNil = { expression, message, file, line in
       assertNotNil.fulfill()
     }
     
     let a: A? = A()
     
-    expectation.to
+    _ = expectation.to
     expectation.assertNotNil(a, "")
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
@@ -188,17 +188,17 @@ class Expectation_Spec: XCTestCase {
     let expectation = expect(5)
     
     
-    let assertNil = expectationWithDescription("assertNil is called")
+    let assertNil = self.expectation(description: "assertNil is called")
     ExpectationAssertFunctions.assertNil = { expression, message, file, line in
       assertNil.fulfill()
     }
     
     let a: A? = A()
     
-    expectation.toNot
+    _ = expectation.toNot
     expectation.assertNotNil(a, "")
     
-    waitForExpectationsWithTimeout(1) {
+    waitForExpectations(timeout: 1) {
       XCTAssert($0 == nil)
     }
     
