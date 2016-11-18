@@ -4,27 +4,17 @@ require_relative 'lib/bin_available'
 desc "Run the unit tests"
 task :test do
   
-  name    = ENV['NAME']
-  version = ENV['VERSION']
-  
-  simulator = nil
+  sh "set -o pipefail && xcodebuild \
+                          -target iOS \
+                          -scheme iOS \
+                          -sdk iphonesimulator \
+                          -enableCodeCoverage YES \
+                          GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
+                          ONLY_ACTIVE_ARCH=YES \
+                          VALID_ARCHS=x86_64 \
+                          -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.0' \
+                          test | bundle exec xcpretty -c"
 
-  if name.nil? || version.nil?
-    simulator = Simulator.random(match: /^iPhone 6$/, min_version: 9.0, max_version: 9.9)
-  else 
-    simulator = Simulator.random(match: /^#{name}$/, min_version: version.to_f, max_version: (version.to_f + 1).floor)
-  end
-
-  sh "set -o pipefail && " +
-  "xcodebuild -scheme iOS " +
-              "-target iOS " +
-              "-destination id=#{simulator.udid} " +
-              "-enableCodeCoverage YES " +
-              "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES " +
-              "ONLY_ACTIVE_ARCH=YES " +
-              "VALID_ARCHS=x86_64 " +
-              "-sdk iphonesimulator test | bundle exec xcpretty -c"
-  
 end
 
 desc "Install dependencies"
