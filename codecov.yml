@@ -1,0 +1,19 @@
+comment:
+  layout: header, changes, diff
+coverage:
+  ignore:
+  - Tests/*
+  status:
+    patch: false
+    
+coverage:
+  precision: 1
+  round: down
+  range: "85...100"
+  status:
+    patch: false
+    changes: false
+    project:
+      default:
+        target: 80
+        threshold: 10%
