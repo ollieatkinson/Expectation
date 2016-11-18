@@ -14,8 +14,12 @@ Expectation provides additional methods for an expectation using protocol extens
 
 ## Installation
 
-_The latest build 0.0.3 is made for swift 2.2, if you require swift 2.1 please use version 0.0.2._
-
+| Expectation Version | Swift Version |
+| ------------------- | ------------- |
+| 0.0.4 *(latest)*    | 3.0           |
+| 0.0.3               | 2.2           |
+| 0.0.2               | 2.1           |
+ 
 ### CocoaPods
 
 Integrate Expectation using a Podfile:
