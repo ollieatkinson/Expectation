@@ -15,6 +15,3 @@ script:
 
 env:
   - "NAME='iPhone 6' VERSION=10.0"
-  - "NAME='iPhone 6' VERSION=9.0"
-  - "NAME='iPad Air' VERSION=10.0"
-  - "NAME='iPad Air' VERSION=9.0"
